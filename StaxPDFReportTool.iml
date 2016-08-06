@@ -3,14 +3,11 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="pdfbox-app-2.0.2" level="project" />
-    <orderEntry type="library" name="fxgraphics2d-1.4" level="project" />
-    <orderEntry type="library" name="icepdf-core" level="project" />
-    <orderEntry type="library" name="OpenViewerFX-7.4.01" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -20,5 +17,11 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="slf4j-api-1.7.21" level="project" />
+    <orderEntry type="library" name="fxgraphics2d-1.4 " level="project" />
+    <orderEntry type="library" name="icepdf-core " level="project" />
+    <orderEntry type="library" name="icepdf-viewer" level="project" />
+    <orderEntry type="library" name="pdfbox-app-2.0.2 " level="project" />
+    <orderEntry type="library" name="groovy-all-2.3.11" level="project" />
   </component>
 </module>
