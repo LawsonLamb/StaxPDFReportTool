@@ -1,7 +1,7 @@
 package StaxPDFReportTool.app;
 
-import StaxPDFReportTool.View.ReportEditController;
-import StaxPDFReportTool.View.ReportViewComponent;
+import StaxPDFReportTool.app.View.ReportEditController;
+import StaxPDFReportTool.app.View.ReportViewComponent;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,8 +18,7 @@ public class ReportView extends ReportAppComponent{
     public ReportView(){
         try {
             logger.info("Loading and intializing FXML view components.");
-            reportEditView = new ReportViewComponent<>(ReportAppConstants.REPORT_EDIT_FXML);
-
+            reportEditView = new ReportViewComponent<>("ReportEditView");
             logger.info("Done loading and initializing FXML view components.");
         }
         catch (Throwable oopsie){

@@ -8,8 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import StaxPDFReportTool.View.Canvas.ICEPDFCanvas;
-import StaxPDFReportTool.View.Canvas.PDFCanvas;
+import StaxPDFReportTool.app.View.Canvas.ICEPDFCanvas;
+import StaxPDFReportTool.app.View.Canvas.PDFCanvas;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class Main extends Application {
     }
     private void PDFCanvasTest(Stage primaryStage) throws IOException {
 
-        PDDocument doc = PDDocument.load(new File("StaxPDFReportTool.app.View/LGS_Business_Personal_Property_Tax_Return_PT50P.pdf"));
+        PDDocument doc = PDDocument.load(new File("StaxPDFReportTool/app/LGS_Business_Personal_Property_Tax_Return_PT50P.pdf"));
         PDFCanvas canvas = new PDFCanvas(doc, 2, 1);
         canvas.widthProperty().addListener(e->canvas.reDraw());
         pane = new Pane();
@@ -56,8 +56,8 @@ public class Main extends Application {
     private  void ICE_TEST(Stage primaryStage) throws IOException {
         final SwingNode swingNode = new SwingNode();
         pane = new Pane();
-        PDDocument doc = PDDocument.load(new File("StaxPDFReportTool.app.View/LGS_Business_Personal_Property_Tax_Return_PT50P.pdf"));
-        ICEPDFCanvas icepdfCanvas = new ICEPDFCanvas("StaxPDFReportTool.app.View/LGS_Business_Personal_Property_Tax_Return_PT50P.pdf");
+        PDDocument doc = PDDocument.load(new File("StaxPDFReportTool/app/LGS_Business_Personal_Property_Tax_Return_PT50P.pdf"));
+        ICEPDFCanvas icepdfCanvas = new ICEPDFCanvas("StaxPDFReportTool/app/LGS_Business_Personal_Property_Tax_Return_PT50P.pdf");
         icepdfCanvas.Swing(swingNode);
         pane.getChildren().add(swingNode);
         Scene scene = new Scene(pane, width, height);

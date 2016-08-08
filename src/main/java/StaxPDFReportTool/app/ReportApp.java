@@ -3,6 +3,9 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
+
 public class ReportApp extends Application{
     //-- logging --//
     private static final Logger logger = LoggerFactory.getLogger(ReportApp.class);
@@ -21,15 +24,19 @@ public class ReportApp extends Application{
 
 
     public ReportApp(){
+
         logger.info("Creating Report App.");
         currentApp = this;
-        model = new ReportModel();
-        view = new ReportView();
-        logic = new ReportLogic();
+
+            model = new ReportModel();
+            view = new ReportView();
+            logic = new ReportLogic();
+
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
+
         view.start(primaryStage);
     }
 
