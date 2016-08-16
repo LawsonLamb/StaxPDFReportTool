@@ -1,7 +1,7 @@
-package StaxPDFReportTool.app.Logic;
+package StaxPDFReportTool.app.logic;
 
+import StaxPDFReportTool.app.model.ReportField;
 import StaxPDFReportTool.app.ReportAppComponent;
-import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -9,16 +9,15 @@ public class ReportEditLogic extends ReportAppComponent {
     //-- logging --//
     private static final Logger logger = LoggerFactory.getLogger(ReportEditLogic.class);
 
-
     //-- properties --//
-    private PDField currentField;
+    private ReportField currentField;
     //-- constructors --//
 
-    public PDField getCurrentField(){
+    public ReportField getCurrentField(){
         return currentField;
     }
 
-    public void setCurrentField(PDField field){
+    public void setCurrentField(ReportField field){
         currentField = field;
     }
 

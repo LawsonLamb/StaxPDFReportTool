@@ -1,4 +1,5 @@
 package StaxPDFReportTool.app;
+import StaxReport.StaxReport;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
@@ -27,8 +28,7 @@ public class ReportApp extends Application{
 
         logger.info("Creating Report App.");
         currentApp = this;
-
-            model = new ReportModel();
+        model = new ReportModel();
             view = new ReportView();
             logic = new ReportLogic();
 

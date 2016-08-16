@@ -1,4 +1,4 @@
-package StaxPDFReportTool.app.Model;
+package StaxPDFReportTool.app.model;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 
@@ -41,7 +41,6 @@ public class ReportEditModel {
   public void setDocument(PDDocument Document){
     document = Document;
   }
-
 
 
 }

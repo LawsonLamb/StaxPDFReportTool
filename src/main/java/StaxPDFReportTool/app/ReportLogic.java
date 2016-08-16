@@ -1,7 +1,7 @@
 package StaxPDFReportTool.app;
 
-import StaxPDFReportTool.app.Logic.ReportEditLogic;
-import StaxPDFReportTool.app.Logic.ReportErrorLogic;
+import StaxPDFReportTool.app.logic.ReportEditLogic;
+import StaxPDFReportTool.app.logic.ReportErrorLogic;
 import javafx.application.Platform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

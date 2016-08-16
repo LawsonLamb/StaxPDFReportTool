@@ -8,8 +8,8 @@ import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import StaxPDFReportTool.app.View.Canvas.ICEPDFCanvas;
-import StaxPDFReportTool.app.View.Canvas.PDFCanvas;
+import StaxPDFReportTool.app.view.renderer.canvas.ICEPDFCanvas;
+import StaxPDFReportTool.app.view.renderer.canvas.PDFCanvas;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,7 +29,7 @@ public class Main extends Application {
     }
 
     private  void FXSceneInit(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../../resources/StaxPDFReportTool.app.View/PDFReportToolScene.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("app/view/PDFReportToolScene.fxml"));
         primaryStage.setScene(new Scene(root, width, height));
         primaryStage.show();
     }
@@ -68,7 +68,7 @@ public class Main extends Application {
     }
 
     private void PDFFXSceneInit(Stage primaryStage) throws IOException{
-        Parent root = FXMLLoader.load(getClass().getResource("../../resources/StaxPDFReportTool.app.View/PDFView.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("app/view/PDFView.fxml"));
         primaryStage.setScene(new Scene(root, width, height));
         primaryStage.show();
     }

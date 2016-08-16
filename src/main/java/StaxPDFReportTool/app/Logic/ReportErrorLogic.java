@@ -1,4 +1,4 @@
-package StaxPDFReportTool.app.Logic;
+package StaxPDFReportTool.app.logic;
 
 import StaxPDFReportTool.app.ReportAppComponent;
 import StaxPDFReportTool.app.ReportLogic;
