@@ -47,12 +47,6 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
     @FXML
     MenuItem exitMenuItem;
     @FXML
-    Menu viewMenu;
-    @FXML
-    MenuItem nextPageItem;
-    @FXML
-    MenuItem previousPageItem;
-    @FXML
     AnchorPane documentPanel;
     @FXML
     ScrollPane scrollPane;
@@ -98,29 +92,9 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
     public void exitMenuItemAction(ActionEvent event){
         exitApplication();
     }
-    @FXML
-    public void nextPageItemAction(ActionEvent event){
-        nextPage();
-    }
-    @FXML
-    public void previousPageItemAction(ActionEvent event){
-        previousPage();
-    }
 
 
-    public void nextPage(){
-        if (currentPage < numberOfPages - 1)
-        {
-            currentPage++;
-            showPage(currentPage);
-        }
-    }
-    private void previousPage(){
-        if (currentPage > 0) {
-            currentPage--;
-            showPage(currentPage);
-        }
-    }
+
     public void setupVbox(){
         ImageView view;
       for(int i=0;i<pageTree.getCount();i++){
@@ -129,21 +103,7 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
         // imageViewList.add(view);
       }
     }
-    private void updateTitle()
-    {
-        //// TODO: 8/15/16  implement may not be needed
-    }
-    private void showPage(int pageNumber)
-    {
-        if(documentPanel.getChildren().size()<=0){
-            documentPanel.getChildren().add(createPage(pageNumber));
-        }
-        else{
-            documentPanel.getChildren().removeAll();
-            documentPanel.getChildren().add(createPage(currentPage));
-        }
 
-    }
     // methods
     private Image getImage(int pageNumber) {
         BufferedImage pageImage;
