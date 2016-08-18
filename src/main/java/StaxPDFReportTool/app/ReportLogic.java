@@ -1,7 +1,7 @@
 package StaxPDFReportTool.app;
 
-import StaxPDFReportTool.app.logic.ReportEditLogic;
 import StaxPDFReportTool.app.logic.ReportErrorLogic;
+import StaxPDFReportTool.app.logic.ReportViewerLogic;
 import javafx.application.Platform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -12,14 +12,13 @@ public class ReportLogic extends ReportAppComponent {
 
     //-- properties --//
     private final ReportErrorLogic errorLogic;
-    private final ReportEditLogic editLogic;
 
+    private final ReportViewerLogic reportViewerLogic;
 
     //-- constructors --//
     public ReportLogic() {
         this.errorLogic = new ReportErrorLogic();
-        this.editLogic = new ReportEditLogic();
-
+        this.reportViewerLogic = new ReportViewerLogic();
     }
 
     //-- ReportLogic methods --//
@@ -41,8 +40,9 @@ public class ReportLogic extends ReportAppComponent {
         return errorLogic;
     }
 
-    public ReportEditLogic editLogic(){
-        return editLogic;
+
+    public ReportViewerLogic reportViewerLogic(){
+        return  reportViewerLogic;
     }
 
 

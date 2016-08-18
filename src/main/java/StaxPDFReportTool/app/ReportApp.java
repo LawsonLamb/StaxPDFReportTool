@@ -25,18 +25,15 @@ public class ReportApp extends Application{
 
 
     public ReportApp(){
-
         logger.info("Creating Report App.");
         currentApp = this;
         model = new ReportModel();
-            view = new ReportView();
-            logic = new ReportLogic();
-
+        view = new ReportView();
+        logic = new ReportLogic();
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         view.start(primaryStage);
     }
 

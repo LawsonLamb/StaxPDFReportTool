@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 public class ReportErrorLogic extends ReportAppComponent{
 
     //-- logging --//
-    private static final Logger logger = LoggerFactory.getLogger(ReportLogic.class);
+    private static final Logger logger = LoggerFactory.getLogger(ReportErrorLogic.class);
 
     public void showInfo(String message) {
         showInfo(message, null);
