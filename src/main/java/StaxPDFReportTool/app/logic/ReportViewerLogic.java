@@ -21,16 +21,21 @@ public class ReportViewerLogic extends ReportAppComponent{
 
     //-- logging --//
     private static final Logger logger = LoggerFactory.getLogger(ReportViewerLogic.class);
+
     //-- properties --//
     private ReportField currentField;
+
     //-- constructors --//
     public ReportField getCurrentField(){
         return currentField;
     }
 
+
+
     public void setCurrentField(ReportField field){
         currentField = field;
     }
+
 
     public void exitApplication()
     {
@@ -63,6 +68,14 @@ public class ReportViewerLogic extends ReportAppComponent{
         ImageView view = new ImageView(getImage(index));
         return view;
     }
+
+    public File savePDF(String filePath){
+        File file = new File(filePath);
+
+        return file;
+    }
+
+
 
 
 

@@ -7,6 +7,7 @@ import javafx.beans.value.ObservableValue;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPageTree;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;
+import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.rendering.PDFRenderer;
 
 
@@ -16,22 +17,23 @@ import java.io.IOException;
 public class ReportViewerModel {
 
 
-
+//region Variables
     private ObjectProperty<PDDocument> pdDocumentObjectProperty;
     private PDFRenderer renderer;
     private PDAcroForm acroForm;
     private PDPageTree pageTree;
     private ReportFieldList fieldList;
+    //endregion
 
+    //region Constructors
     public ReportViewerModel(){
     pdDocumentObjectProperty = new SimpleObjectProperty<>(null);
-        setupLisenters();
+        setupListeners();
     }
     public ReportViewerModel( PDDocument Document){
        setDocument(Document);
         init();
     }
-
     public ReportViewerModel(File fileName) throws IOException {
        setDocument(PDDocument.load(fileName));
          init();
@@ -42,8 +44,11 @@ public class ReportViewerModel {
         setDocument(PDDocument.load(new File(FileName)));
         init();
     }
+//endregion
 
-    void init(){
+    //region Methods
+
+   private void init(){
         if(renderer!=null){
             renderer = null;
             fieldList = null;
@@ -53,7 +58,8 @@ public class ReportViewerModel {
 
     }
 
-    void setupLisenters(){
+
+    private void setupListeners(){
         pdDocumentObjectProperty.addListener(new ChangeListener<PDDocument>() {
             @Override
             public void changed(ObservableValue<? extends PDDocument> observable, PDDocument oldValue, PDDocument newValue) {
@@ -62,7 +68,37 @@ public class ReportViewerModel {
             }
         });
     }
+    public void savePDF(String FilePath) throws IOException {
+        saveFields();
+        pdDocumentObjectProperty.get().save(FilePath);
+    }
+    public void savePDF(File file) throws IOException {
+        saveFields();
+        pdDocumentObjectProperty.get().save(file);
+    }
 
+    private void saveFields(){
+        PDAcroForm pdAcroForm =    pdDocumentObjectProperty.getValue().getDocumentCatalog().getAcroForm();
+        for(int i=0;i<fieldList.GetObservableList().size();i++){
+
+            PDField pdField = pdAcroForm.getFields().get(i);
+            ReportField reportField = fieldList.get(i);
+            pdField.setMappingName(reportField.getMappingName());
+            pdField.setPartialName(reportField.getPartialName());
+            pdField.setAlternateFieldName(reportField.getAltName());
+            pdField.setReadOnly(reportField.getReadOnly());
+            pdField.setNoExport(reportField.getIsNoExport());
+            pdField.setRequired(reportField.getIsRequired());
+
+        }
+    }
+    //endregion
+
+
+
+
+
+    //region Accessors
     public ReportFieldList getFieldList(){
         return fieldList;
     }
@@ -71,7 +107,10 @@ public class ReportViewerModel {
     }
 
 
-    // Accessors
+
+
+
+
     public PDDocument getDocument(){
         return pdDocumentObjectProperty.getValue();
     }
@@ -106,6 +145,6 @@ public class ReportViewerModel {
     public ObjectProperty<PDDocument>   PDDocumentObjectProperty(){
         return pdDocumentObjectProperty;
     }
-
+//endregion
 
 }

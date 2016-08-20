@@ -5,9 +5,12 @@ import StaxPDFReportTool.app.logic.ReportViewerLogic;
 import StaxPDFReportTool.app.model.ReportField;
 import StaxPDFReportTool.app.model.ReportViewerModel;
 import javafx.event.ActionEvent;
+import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.input.KeyEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -18,81 +21,186 @@ import org.apache.pdfbox.pdmodel.PDPageTree;
 
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class PDFViewer extends ReportAppComponent implements Initializable {
 
+    //region FXML Member Variables
+
     @FXML
-    ListView<ReportField> fieldListView;
+    private BorderPane borderPane;
+
     @FXML
-    TextField idTextField;
+    private MenuBar menuBar;
+
     @FXML
-    TextField mappingIDTextField;
+    private Menu fileMenu;
+
     @FXML
-    BorderPane borderPane;
+    private MenuItem openMenuItem;
+
     @FXML
-    MenuBar menuBar;
+    private MenuItem saveMenuItem;
+
     @FXML
-    Menu fileMenu;
+    private MenuItem saveAsMenuItem;
+
     @FXML
-    MenuItem openMenuItem;
+    private Menu exportMenuBar;
+
     @FXML
-    Menu exportMenuBar;
+    private MenuItem saveAsImageMenuItem;
+
     @FXML
-    MenuItem saveAsImageMenuItem;
+    private MenuItem exitMenuItem;
+
     @FXML
-    MenuItem exitMenuItem;
+    private MenuItem pdfPropertysMenuItem;
+
     @FXML
-    AnchorPane documentPanel;
+    private MenuItem fieldFormsMenuItem;
+
     @FXML
-    ScrollPane scrollPane;
+    private ListView<ReportField> fieldListView;
+
     @FXML
-    VBox imageVBox;
+    private TextField partialNameTextField;
+
+    @FXML
+    private TextField mappingNameTextField;
+
+    @FXML
+    private TextField fullNameTextField;
+
+    @FXML
+    private TextField alternativeNameTextField;
+
+    @FXML
+    private CheckBox noExportCheckBox;
+
+    @FXML
+    private CheckBox readOnlyCheckBox;
+
+    @FXML
+    private CheckBox isRequiredCheckBox;
+
+    @FXML
+    private ScrollPane scrollPane;
+
+    @FXML
+    private AnchorPane documentPanel;
+
+    @FXML
+    private VBox imageVBox;
+
+// endregion
 
     private int numberOfPages = 0;
-
+    private String currentFilename = null;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
 
-    //  ---------  FXML Methods   ------- //
-
-    @FXML
-    public void openMenuItemAction(ActionEvent event) {
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Open Resource File");
-        File file =  fileChooser.showOpenDialog(borderPane.getScene().getWindow());
-        if (file != null){
-            try {
-                openPDFFile(file);
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-    }
-
-
-    @FXML
-    public void exitMenuItemAction(ActionEvent event) {
-        app().logic().reportViewerLogic().exitApplication();
-    }
-
-
+    //region FXML Field List View Methods
     @FXML
     public void getFieldProperty(javafx.scene.input.MouseEvent event) {
 
         //// TODO: 8/17/2016  error checking
         updateViewFromModel();
 
-        // // TODO: 8/17/2016  make so we don't have to call setcellfactory every time we mouse click
+        // // TODO: 8/17/2016  make so we don't have to call set cell factory every time we mouse click
          setCellFactory();
 
 
 
     }
-    public void setCellFactory(){
+    //endregion
+
+    //region FXML  MENU Action Methods
+
+    @FXML
+    public void openMenuItemAction(ActionEvent event) {
+    FileChooser fileChooser = new FileChooser();
+    fileChooser.setTitle("Open Resource File");
+    File file =  fileChooser.showOpenDialog(borderPane.getScene().getWindow());
+    if (file != null){
+        try {
+            openPDFFile(file);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+    @FXML
+    void fieldFormsMenuItemAction(ActionEvent event) {
+    //// TODO: 8/19/2016  implement
+    }
+
+    @FXML
+    void pdfPropertysMenuItem(ActionEvent event) {
+        //// TODO: 8/19/2016 implement
+    }
+    @FXML
+    public void exitMenuItemAction(ActionEvent event) {
+        app().logic().reportViewerLogic().exitApplication();
+    }
+
+    @FXML
+    void saveAsMenuItemAction(ActionEvent event) {
+         FileChooser fileChooser = new FileChooser();
+         fileChooser.setTitle("Save As ");
+
+        if(currentFilename!=null) {
+            fileChooser.setInitialDirectory(new File(currentFilename));
+        }
+                       File file =  fileChooser.showOpenDialog(borderPane.getScene().getWindow());
+        if(file!=null){
+            try {
+                getModel().savePDF(file);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+                     //todo implement error logic
+    }
+
+    @FXML
+    void saveMenuitemAction(ActionEvent event) {
+        if (currentFilename != null) {
+
+            try {
+                getModel().savePDF(currentFilename);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
+        }
+        else{
+
+            // TODO: 8/19/2016 implement error logic
+        }
+    }
+
+//endregion
+
+    //region FXML Property actions Methods
+
+
+
+    @FXML
+    void partialNameTextFieldAction(ActionEvent event) {
+       setCellFactory();
+    }
+
+    //endregion
+
+
+    // region Controller Methods
+    private void setCellFactory(){
 
         fieldListView.setCellFactory(new Callback<ListView<ReportField>, ListCell<ReportField>>() {
             @Override
@@ -100,17 +208,15 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
                 {
 
                     ListCell<ReportField> cell = new ListCell<ReportField>() {
-
                         @Override
                         protected void updateItem(ReportField t, boolean bln) {
                             super.updateItem(t, bln);
                             if (t != null) {
-                                setText(t.getID());
+                                setText(t.getPartialName());
                             }
                         }
 
                     };
-
                     return cell;
                 }
             }
@@ -120,19 +226,30 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
         });
     }
 
-    public void updateViewFromModel() {
-
+    private void updateViewFromModel() {
         if (getLogic().getCurrentField() != null) {
-            idTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().iDProperty());
+            partialNameTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().partialNameProperty());
+            mappingNameTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().mappingNameProperty());
+            fullNameTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().fullNameProperty());
+            alternativeNameTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().altNameProperty());
+            noExportCheckBox.selectedProperty().unbindBidirectional(getLogic().getCurrentField().isNoExportProperty());
+            readOnlyCheckBox.selectedProperty().unbindBidirectional(getLogic().getCurrentField().readOnlyProperty());
+            isRequiredCheckBox.selectedProperty().unbindBidirectional(getLogic().getCurrentField().isRequiredProperty());
         }
         int index = fieldListView.getSelectionModel().getSelectedIndex();
-        getLogic().setCurrentField(getModel().getFieldList().GetObserableList().get(index));
+        getLogic().setCurrentField(getModel().getFieldList().get(index));
+       // getLogic().getCurrentField().Update();
+
 
         if (getLogic().getCurrentField() != null) {
-
-            idTextField.textProperty().bindBidirectional(getLogic().getCurrentField().iDProperty());
+            partialNameTextField.textProperty().bindBidirectional(getLogic().getCurrentField().partialNameProperty());
+            mappingNameTextField.textProperty().bindBidirectional(getLogic().getCurrentField().mappingNameProperty());
+            fullNameTextField.textProperty().bindBidirectional(getLogic().getCurrentField().fullNameProperty());
+            alternativeNameTextField.textProperty().bindBidirectional(getLogic().getCurrentField().altNameProperty());
+            noExportCheckBox.selectedProperty().bindBidirectional(getLogic().getCurrentField().isNoExportProperty());
+            readOnlyCheckBox.selectedProperty().bindBidirectional(getLogic().getCurrentField().readOnlyProperty());
+            isRequiredCheckBox.selectedProperty().bindBidirectional(getLogic().getCurrentField().isRequiredProperty());
         }
-
 
     }
 
@@ -142,8 +259,7 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
         }
     }
 
-    // methods
-    // // TODO: 8/17/2016 move to logic if possible
+
     private void openPDFFile(File file) throws Exception {
         PDDocument document = app().model().reportViewerModel().getDocument();
         if (document != null) {
@@ -151,17 +267,24 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
             // documentPanel.removeAll();
             documentPanel.getChildren().removeAll();
         }
-
+        currentFilename = file.getAbsolutePath();
         app().model().reportViewerModel().setDocument(PDDocument.load(file));
-        //  pdfRenderer = new PDFRenderer(pdfDocument);
         PDPageTree pageTree = app().model().reportViewerModel().getDocument().getPages();
         numberOfPages = pageTree.getCount();
-        fieldListView.setItems(app().model().reportViewerModel().getFieldList().GetObserableList());
+        fieldListView.setItems(app().model().reportViewerModel().getFieldList().GetObservableList());
         setCellFactory();
         setupVbox();
 
     }
 
+
+
+
+
+    //endregion
+
+
+    //region Accessors
     public ReportViewerLogic getLogic() {
 
         return app().logic().reportViewerLogic();
@@ -171,6 +294,11 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
     public ReportViewerModel getModel(){
         return app().model().reportViewerModel();
     }
+
+    public BorderPane getRoot() {
+        return  borderPane;
+    }
+    //endregion
 
 
 

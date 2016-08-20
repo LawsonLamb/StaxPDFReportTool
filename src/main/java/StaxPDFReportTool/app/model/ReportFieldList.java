@@ -16,11 +16,11 @@ public class ReportFieldList  {
     ReportFieldList(PDAcroForm acroForm){
 
         pdAcroForm = acroForm;
-        reportFields= FXCollections.observableList(ConvertToArraryList(acroForm.getFields()));
+        reportFields= FXCollections.observableList(ConvertToArrayList(acroForm.getFields()));
 
 
     }
-    private ArrayList<ReportField> ConvertToArraryList(List<PDField> pdFieldList){
+    private ArrayList<ReportField> ConvertToArrayList(List<PDField> pdFieldList){
         ArrayList<ReportField> reportFieldArrayList = new ArrayList<>();
 
         for(int i=0;i< pdFieldList.size();i++){
@@ -30,9 +30,13 @@ public class ReportFieldList  {
         return reportFieldArrayList;
     }
 
-    public ObservableList<ReportField> GetObserableList(){
+    public ObservableList<ReportField> GetObservableList(){
         return  reportFields;
 
+    }
+
+    public ReportField get(int index){
+       return reportFields.get(index);
     }
 
 
