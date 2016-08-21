@@ -1,10 +1,13 @@
 package StaxPDFReportTool.app;
 
 import StaxPDFReportTool.app.view.controller.PDFViewer;
+import StaxPDFReportTool.app.view.controller.PdfFormPropertyPaneController;
 import StaxPDFReportTool.app.view.controller.ReportViewComponent;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.io.IOException;
 
 public class ReportView extends ReportAppComponent{
     //-- logging --//
@@ -15,6 +18,7 @@ public class ReportView extends ReportAppComponent{
 
 
     private ReportViewComponent<PDFViewer> pdfViewerReportViewComponent;
+    private ReportViewComponent<PdfFormPropertyPaneController> pdfFormPropertyPaneControllerReportViewComponent;
 
     //-- constructors --//
     public ReportView(){
@@ -23,6 +27,7 @@ public class ReportView extends ReportAppComponent{
 
 
             pdfViewerReportViewComponent = new ReportViewComponent<>("PDFViewer");
+           pdfFormPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("Form_Field_StackPane");
 
             logger.info("Done loading and initializing FXML view components.");
         }
@@ -44,6 +49,10 @@ public class ReportView extends ReportAppComponent{
 
     public void openPdfViewer(){
         stage.setScene(pdfViewerReportViewComponent.scene());
+    }
+    public void openPdfFormPropertyPane()  {
+        stage.setScene(pdfFormPropertyPaneControllerReportViewComponent.scene());
+        pdfFormPropertyPaneControllerReportViewComponent.controller().Open();
     }
 
 }

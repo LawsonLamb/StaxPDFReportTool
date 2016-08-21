@@ -137,6 +137,9 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
     @FXML
     void fieldFormsMenuItemAction(ActionEvent event) {
     //// TODO: 8/19/2016  implement
+
+            app().view().openPdfFormPropertyPane();
+
     }
 
     @FXML

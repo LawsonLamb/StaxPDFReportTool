@@ -12,7 +12,6 @@ public class ReportLogic extends ReportAppComponent {
 
     //-- properties --//
     private final ReportErrorLogic errorLogic;
-
     private final ReportViewerLogic reportViewerLogic;
 
     //-- constructors --//

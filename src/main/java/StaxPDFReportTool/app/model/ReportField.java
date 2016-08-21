@@ -10,6 +10,7 @@ public class ReportField {
     private StringProperty mappingNameProperty;
     private StringProperty fullNameProperty;
     private StringProperty altName;
+    private StringProperty fieldTypeProperty;
     private BooleanProperty isNoExportProperty;
     private BooleanProperty readOnlyProperty;
     private BooleanProperty isRequiredProperty;
@@ -24,6 +25,7 @@ public class ReportField {
         isNoExportProperty = new SimpleBooleanProperty();
         readOnlyProperty = new SimpleBooleanProperty();
         isRequiredProperty = new SimpleBooleanProperty();
+        fieldTypeProperty = new SimpleStringProperty();
     }
 
     public ReportField(PDField field){
@@ -35,6 +37,7 @@ public class ReportField {
         isNoExportProperty = new SimpleBooleanProperty(field.isNoExport());
         readOnlyProperty = new SimpleBooleanProperty(field.isReadOnly());
         isRequiredProperty = new SimpleBooleanProperty(field.isRequired());
+        fieldTypeProperty = new SimpleStringProperty(field.getFieldType());
 
 
     }
@@ -50,6 +53,7 @@ public class ReportField {
             setIsNoExport(getField().isNoExport());
             setReadOnly(getField().isReadOnly());
             setIsRequired(getField().isRequired());
+            setFieldType(getField().getFieldType());
         }
     }
 
@@ -61,6 +65,7 @@ public class ReportField {
             getField().setNoExport(getIsNoExport());
             getField().setReadOnly(getReadOnly());
             getField().setRequired(getIsRequired());
+
         }
     }
 
@@ -118,6 +123,11 @@ public class ReportField {
         partialNameProperty.set(value);
     }
 
+    public String getFieldType(){return fieldTypeProperty.get();}
+    public void setFieldType(String value){
+        fieldTypeProperty.set(value);
+    }
+
 
     //endregion
 
@@ -148,6 +158,7 @@ public class ReportField {
     public BooleanProperty isRequiredProperty(){
         return isRequiredProperty;
     }
+    public StringProperty fieldTypeProperty(){return fieldTypeProperty;}
 
 
 
