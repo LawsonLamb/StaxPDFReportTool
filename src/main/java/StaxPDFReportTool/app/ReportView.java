@@ -55,4 +55,8 @@ public class ReportView extends ReportAppComponent{
         pdfFormPropertyPaneControllerReportViewComponent.controller().Open();
     }
 
+   public ReportViewComponent<PDFViewer> pdfViewerReportViewComponent(){
+       return pdfViewerReportViewComponent;
+   }
+
 }

@@ -19,7 +19,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StaxPDFReportTool.app.view.controller.PDFViewer">
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StaxPDFReportTool.app.view.controller.PDFViewer">
    <top>
       <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
         <menus>
@@ -36,15 +36,21 @@
               <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" onAction="#exitMenuItemAction" text="Exit" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Edit">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-              </items>
-            </Menu>
+            <Menu mnemonicParsing="false" text="Edit" />
             <Menu mnemonicParsing="false" text="View">
               <items>
                 <MenuItem fx:id="pdfPropertysMenuItem" mnemonicParsing="false" onAction="#pdfPropertysMenuItem" text="PDF Propertys" />
-                  <MenuItem fx:id="fieldFormsMenuItem" mnemonicParsing="false" onAction="#fieldFormsMenuItemAction" text="Field Forms Propertys" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Form">
+              <items>
+                  <Menu mnemonicParsing="false" text="Field Values">
+                    <items>
+                      <MenuItem fx:id="setIdAsMenuItem" mnemonicParsing="false" onAction="#setIdAsMenuItemAction" text="Set ID's as Value" />
+                      <MenuItem fx:id="setMappingIdAsValueMenuItem" mnemonicParsing="false" onAction="#setMappingIdAsValueMenuItemAction" text="Set Mapping ID as Value" />
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="fieldFormsMenuItem" mnemonicParsing="false" onAction="#fieldFormsMenuItemAction" text="Field Propertys Table" />
               </items>
             </Menu>
         </menus>
@@ -82,18 +88,17 @@
                                               <ColumnConstraints halignment="RIGHT" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" minWidth="122.0" prefWidth="123.0" />
                                             </columnConstraints>
                                             <rowConstraints>
-                                                <RowConstraints maxHeight="66.0" minHeight="41.0" prefHeight="46.0" valignment="CENTER" vgrow="ALWAYS" />
                                               <RowConstraints maxHeight="51.0" minHeight="32.0" prefHeight="44.0" valignment="CENTER" vgrow="ALWAYS" />
                                                 <RowConstraints maxHeight="52.0" minHeight="31.0" prefHeight="41.0" valignment="CENTER" vgrow="ALWAYS" />
                                               <RowConstraints maxHeight="34.0" minHeight="31.0" prefHeight="34.0" valignment="CENTER" vgrow="ALWAYS" />
                                             </rowConstraints>
                                              <children>
-                                                <Label alignment="CENTER" text="Partial Name" textAlignment="CENTER" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <Label alignment="CENTER" text="Partial Name(ID)" textAlignment="CENTER" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <padding>
                                                       <Insets top="2.0" />
                                                    </padding>
                                                 </Label>
-                                                <TextField fx:id="partialNameTextField" alignment="CENTER" onAction="#partialNameTextFieldAction" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <TextField fx:id="partialNameTextField" alignment="CENTER" onAction="#partialNameTextFieldAction" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <padding>
                                                       <Insets top="2.0" />
                                                    </padding>
@@ -101,12 +106,12 @@
                                                       <Insets left="2.0" />
                                                    </GridPane.margin>
                                                 </TextField>
-                                                <Label alignment="CENTER" text="Mapping Name" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <Label alignment="CENTER" text="Mapping Name" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <padding>
                                                       <Insets top="2.0" />
                                                    </padding>
                                                 </Label>
-                                                <TextField fx:id="mappingNameTextField" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <TextField fx:id="mappingNameTextField" alignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <padding>
                                                       <Insets top="2.0" />
                                                    </padding>
@@ -114,25 +119,12 @@
                                                       <Insets left="2.0" />
                                                    </GridPane.margin>
                                                 </TextField>
-                                                <Label alignment="CENTER" text="Full Name" wrapText="true" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <Label text="Alternative Name" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <padding>
                                                       <Insets top="2.0" />
                                                    </padding>
                                                 </Label>
-                                                <Label text="Alternative Name" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-                                                   <padding>
-                                                      <Insets top="2.0" />
-                                                   </padding>
-                                                </Label>
-                                                <TextField fx:id="fullNameTextField" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
-                                                   <padding>
-                                                      <Insets top="2.0" />
-                                                   </padding>
-                                                   <GridPane.margin>
-                                                      <Insets left="2.0" />
-                                                   </GridPane.margin>
-                                                </TextField>
-                                                <TextField fx:id="alternativeNameTextField" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <TextField fx:id="alternativeNameTextField" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <padding>
                                                       <Insets top="2.0" />
                                                    </padding>
