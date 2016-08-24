@@ -4,14 +4,10 @@ import StaxPDFReportTool.app.ReportAppComponent;
 import StaxPDFReportTool.app.logic.ReportViewerLogic;
 import StaxPDFReportTool.app.model.ReportField;
 import StaxPDFReportTool.app.model.ReportViewerModel;
-import StaxReport.StaxReport;
 import javafx.event.ActionEvent;
-import javafx.event.Event;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
@@ -19,7 +15,6 @@ import javafx.stage.FileChooser;
 import javafx.util.Callback;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPageTree;
-import org.apache.pdfbox.pdmodel.fdf.FDFDocument;
 
 
 import java.io.File;
@@ -74,15 +69,10 @@ public class PDFViewer extends ReportAppComponent implements Initializable {
     //region FXML Field List View Methods
     @FXML
     public void getFieldProperty(javafx.scene.input.MouseEvent event) {
-
         //// TODO: 8/17/2016  error checking
         updateViewFromModel();
-
         // // TODO: 8/17/2016  make so we don't have to call set cell factory every time we mouse click
          setCellFactory();
-
-
-
     }
     //endregion
 

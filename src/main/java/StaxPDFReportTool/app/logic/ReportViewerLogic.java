@@ -1,7 +1,6 @@
 package StaxPDFReportTool.app.logic;
 
 import StaxPDFReportTool.app.ReportAppComponent;
-import StaxPDFReportTool.app.ReportView;
 import StaxPDFReportTool.app.model.ReportField;
 import StaxPDFReportTool.app.model.ReportViewerModel;
 import StaxPDFReportTool.app.view.controller.PDFViewer;
@@ -9,9 +8,7 @@ import StaxPDFReportTool.app.view.controller.ReportViewComponent;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.VBox;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPageTree;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.pdmodel.interactive.form.PDTextField;
 import org.apache.pdfbox.rendering.PDFRenderer;

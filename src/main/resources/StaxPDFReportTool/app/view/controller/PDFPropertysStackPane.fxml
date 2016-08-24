@@ -15,7 +15,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StaxPDFReportTool.app.view.controller.PdfPropertyPaneController">
    <children>
       <TitledPane alignment="CENTER" animated="false" collapsible="false" prefHeight="644.0" prefWidth="523.0" text="PDF Propertys">
@@ -47,19 +46,19 @@
                                                       <Font name="System Bold" size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField alignment="CENTER" promptText="Author's name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                                                <TextField fx:id="authorsNameTextField" alignment="CENTER" promptText="Author's name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
                                                 <Label alignment="CENTER" text="Producer" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <font>
                                                       <Font name="System Bold" size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField alignment="CENTER" promptText="Producer's Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                                                <TextField fx:id="producerNameTextField" alignment="CENTER" promptText="Producer's Name" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
                                                 <Label alignment="CENTER" text="Creator" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <font>
                                                       <Font name="System Bold" size="15.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField alignment="CENTER" prefHeight="25.0" prefWidth="317.0" promptText="Name of Creator" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                                                <TextField fx:id="creatorNameTextField" alignment="CENTER" prefHeight="25.0" prefWidth="317.0" promptText="Name of Creator" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
                                              </children>
                                           </GridPane>
                                           <Separator prefHeight="16.0" prefWidth="480.0" />
@@ -74,14 +73,18 @@
                                                       <Font name="System Bold" size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField alignment="CENTER" promptText="Subject of Document" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                                                <TextField fx:id="subjectTextField" alignment="CENTER" promptText="Subject of Document" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
                                                 <Label alignment="CENTER" text="Title" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <font>
                                                       <Font name="System Bold" size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField alignment="CENTER" promptText="Title of Document" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <TextField fx:id="titleTextField" alignment="CENTER" promptText="Title of Document" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                                              </children>
+                                             <rowConstraints>
+                                                <RowConstraints />
+                                                <RowConstraints />
+                                             </rowConstraints>
                                           </GridPane>
                                           <Separator prefHeight="28.0" prefWidth="480.0" />
                                           <GridPane prefHeight="128.0" prefWidth="480.0">
@@ -100,17 +103,21 @@
                                                       <Font name="System Bold" size="14.0" />
                                                    </font>
                                                 </Label>
-                                                <Label alignment="CENTER" text="date created value" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <Label fx:id="dateCreatedValue" alignment="CENTER" text="date created value" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font>
                                                 </Label>
-                                                <Label alignment="CENTER" text="date modified value" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                                                <Label fx:id="dateModifiedValue" alignment="CENTER" text="date modified value" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
                                                    <font>
                                                       <Font size="16.0" />
                                                    </font>
                                                 </Label>
                                              </children>
+                                             <rowConstraints>
+                                                <RowConstraints />
+                                                <RowConstraints />
+                                             </rowConstraints>
                                           </GridPane>
                                        </children>
                                     </VBox>
@@ -122,66 +129,66 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <VBox layoutX="98.0" spacing="10.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
+                                    <VBox layoutX="114.0" prefHeight="520.0" prefWidth="269.0" spacing="10.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="25.0">
                                        <children>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" centerShape="false" mnemonicParsing="false" scaleShape="false" text=" Assemble Document" VBox.vgrow="ALWAYS">
+                                          <CheckBox fx:id="assembleDocumentCheckBox" alignment="CENTER" allowIndeterminate="true" centerShape="false" mnemonicParsing="false" scaleShape="false" text=" Assemble Document" VBox.vgrow="ALWAYS">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Extract Content" textAlignment="CENTER">
+                                          <CheckBox fx:id="extractContentCheckBox" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Extract Content" textAlignment="CENTER">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Extract for Accessibility">
+                                          <CheckBox fx:id="extractAccessCheckBox" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Extract for Accessibility">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Fill in Form">
+                                          <CheckBox fx:id="fillFormCheckBox" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Fill in Form">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Modify">
+                                          <CheckBox fx:id="modifyCheckBox" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Modify">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Modify Annotations">
+                                          <CheckBox fx:id="modifyAnnotationsCheckBox" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Modify Annotations">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Print">
+                                          <CheckBox fx:id="printCheckBox" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Print">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Print Degraded">
+                                          <CheckBox fx:id="printDegraded" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Print Degraded">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Owner Access Permisson">
+                                          <CheckBox fx:id="ownerAcessPermission" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Owner Access Permisson">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" text="Revison 3 Permission">
+                                          <CheckBox fx:id="revison3PermissionCheckBox" alignment="CENTER" allowIndeterminate="true" layoutX="10.0" layoutY="146.0" mnemonicParsing="false" text="Revison 3 Permission">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Owners Permission">
+                                          <CheckBox fx:id="ownersPermissionCheckBox" alignment="CENTER" allowIndeterminate="true" mnemonicParsing="false" text="Owners Permission">
                                              <font>
                                                 <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
-                                          <CheckBox alignment="CENTER" mnemonicParsing="false" text="Read Only">
+                                          <CheckBox fx:id="readOnlyCheckBox" alignment="CENTER" mnemonicParsing="false" text="Read Only">
                                              <font>
-                                                <Font size="18.0" />
+                                                <Font name="System Bold" size="18.0" />
                                              </font>
                                           </CheckBox>
                                        </children>

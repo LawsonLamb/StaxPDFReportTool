@@ -24,7 +24,6 @@ public class ReportViewerModel {
     private PDPageTree pageTree;
     private ReportFieldList fieldList;
     //endregion
-
     //region Constructors
     public ReportViewerModel(){
     pdDocumentObjectProperty = new SimpleObjectProperty<>(null);

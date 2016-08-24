@@ -2,16 +2,12 @@ package StaxPDFReportTool.app.view.controller;
 
 import StaxPDFReportTool.app.ReportAppComponent;
 import StaxPDFReportTool.app.model.ReportField;
-import StaxPDFReportTool.app.model.ReportFieldList;
 import StaxPDFReportTool.app.model.ReportViewerModel;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TreeView;
-import javafx.scene.layout.BorderPane;
-import javafx.util.Callback;
 
 import java.net.URL;
 import java.util.ResourceBundle;

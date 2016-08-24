@@ -67,6 +67,7 @@ public class StaxReport {
             if(field.getClass()  == PDTextField.class){
                 PDTextField pdTextField =(PDTextField)field;
                 pdTextField.setValue(pdTextField.getPartialName());
+
             }
             else if(field.getClass() ==  PDCheckBox.class){
                 PDCheckBox pdCheckBox = (PDCheckBox) field;
