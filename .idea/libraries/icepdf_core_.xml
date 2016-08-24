@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="icepdf-core ">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/ThirdParty/jars/icepdf-core.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
