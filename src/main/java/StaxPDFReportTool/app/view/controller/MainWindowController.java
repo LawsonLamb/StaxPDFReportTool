@@ -2,6 +2,7 @@ package StaxPDFReportTool.app.view.controller;
 
 
 import StaxPDFReportTool.app.ReportAppComponent;
+import StaxPDFReportTool.app.logic.MasterViewLogic;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -9,6 +10,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -20,11 +22,15 @@ public class MainWindowController extends ReportAppComponent implements Initiali
 
     }
 
-
     @FXML
     void openMenuItemAction(ActionEvent event) {
 
-
+        try {
+            masterViewLogic().Open(borderPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        // TODO: 8/30/2016  Error Handling
 
     }
     @FXML
@@ -51,6 +57,7 @@ public class MainWindowController extends ReportAppComponent implements Initiali
     }
     @FXML
     void importFDFMenuItemAction(ActionEvent event) {
+
         /*
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle(" import FDF file location");
@@ -66,6 +73,7 @@ public class MainWindowController extends ReportAppComponent implements Initiali
 
     @FXML
     void exportFDFMenuItemAction(ActionEvent event) {
+
         /*
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle(" export FDF file location");
@@ -82,47 +90,26 @@ public class MainWindowController extends ReportAppComponent implements Initiali
 
     @FXML
     public void exitMenuItemAction(ActionEvent event) {
-        app().logic().reportViewerLogic().exitApplication();
+
     }
 
     @FXML
     void saveAsMenuItemAction(ActionEvent event) {
 
-        /*
-        FileChooser fileChooser = new FileChooser();
-        fileChooser.setTitle("Save As ");
-        if() {
-            fileChooser.setInitialDirectory(new File(currentFilename));
-        }
-        File file =  fileChooser.showOpenDialog(borderPane.getScene().getWindow());
-        if(file!=null){
-            try {
-               // viewTabModel().savePDF(file);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
+        masterViewLogic().SaveAs(borderPane);
         //todo implement error logic
-        */
+
     }
 
     @FXML
     void saveMenuitemAction(ActionEvent event) {
-        /*
-        if (currentFilename != null) {
 
-            try {
-              //  viewTabModel().savePDF(currentFilename);
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-
-        }
-        else{
-
+             masterViewLogic().Save(borderPane);
             // TODO: 8/19/2016 implement error logic
-        }
-        */
+
+    }
+
+    MasterViewLogic masterViewLogic(){
+        return app().logic().masterViewLogic();
     }
 }

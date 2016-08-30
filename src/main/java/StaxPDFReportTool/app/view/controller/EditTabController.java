@@ -51,7 +51,7 @@ public class EditTabController extends ReportAppComponent implements Initializab
     }
     public void Open(){
         setupTree();
-        fieldTableView.setItems(getViewerModel().getFieldList().GetObservableList());
+        fieldTableView.setItems(getViewerModel().GetObservableList());
         partialNameCol.setCellValueFactory(p -> p.getValue().partialNameProperty());
         mappingNameCol.setCellValueFactory(p->p.getValue().mappingNameProperty());
         altNameCol.setCellValueFactory(p->p.getValue().altNameProperty());
@@ -65,9 +65,9 @@ public class EditTabController extends ReportAppComponent implements Initializab
     private void setupTree(){
         TreeItem<String> rootItem = new TreeItem<>("root");
         rootItem.setExpanded(true);
-        List<ReportField> reportFields = getViewerModel().getFieldList().GetObservableList();
+        List<ReportField> reportFields = getViewerModel().GetObservableList();
         for(int i=0; i< reportFields.size();i++){
-         ReportField reportField  = getViewerModel().getFieldList().GetObservableList().get(i);
+         ReportField reportField  = getViewerModel().get(i);
           TreeItem<String> fieldRoot = new TreeItem<>("field");
             System.out.println(reportField.getField().getAlternateFieldName());
             rootItem.getChildren().add(fieldRoot);
@@ -78,7 +78,6 @@ public class EditTabController extends ReportAppComponent implements Initializab
 
         }
 
-
     widgetTreeView.setRoot(rootItem);
 
     }
@@ -86,6 +85,7 @@ public class EditTabController extends ReportAppComponent implements Initializab
     public ViewTabModel getViewerModel(){
         return app().model().reportViewerModel();
     }
+
 
 
 

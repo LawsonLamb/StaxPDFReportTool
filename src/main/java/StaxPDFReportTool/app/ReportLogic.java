@@ -42,6 +42,7 @@ public class ReportLogic extends ReportAppComponent {
     public ViewTabLogic reportViewerLogic(){
         return  reportViewerLogic;
     }
+    public MasterViewLogic masterViewLogic(){return masterViewLogic;}
 //endregion
 
 

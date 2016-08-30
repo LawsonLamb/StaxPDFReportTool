@@ -14,11 +14,10 @@ public class ReportFieldList  {
     private ObservableList<ReportField> reportFields;
     PDAcroForm pdAcroForm;
 
-    ReportFieldList(PDAcroForm acroForm){
+   public ReportFieldList(PDAcroForm acroForm){
 
         pdAcroForm = acroForm;
         reportFields= FXCollections.observableList(ConvertToArrayList(acroForm.getFields()));
-
 
     }
     private ArrayList<ReportField> ConvertToArrayList(List<PDField> pdFieldList){

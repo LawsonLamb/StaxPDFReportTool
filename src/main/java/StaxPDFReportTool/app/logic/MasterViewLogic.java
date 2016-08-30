@@ -1,7 +1,7 @@
 package StaxPDFReportTool.app.logic;
 
 
-import StaxPDFReportTool.app.IMainMenu;
+import StaxPDFReportTool.app.model.pdf.IMainMenu;
 import StaxPDFReportTool.app.ReportAppComponent;
 import StaxPDFReportTool.app.model.pdf.ReportDocument;
 import StaxPDFReportTool.app.view.controller.ViewTabController;
@@ -18,7 +18,7 @@ public class MasterViewLogic extends ReportAppComponent implements IMainMenu{
     public void Open(Node node) throws IOException {
         File file =  createFileChooser(node,"Open PDF ");
         if (file != null){
-            documentModel().Load(file);
+            viewTabController().Load(file);
 
         }
     }
@@ -37,7 +37,7 @@ public class MasterViewLogic extends ReportAppComponent implements IMainMenu{
     public File createFileChooser(Node node, String title){
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle(title);
-        fileChooser.setSelectedExtensionFilter(new FileChooser.ExtensionFilter(".pdf"));
+//         fileChooser.setSelectedExtensionFilter(new FileChooser.ExtensionFilter(".pdf"));
         return fileChooser.showOpenDialog(node.getScene().getWindow());
     }
 

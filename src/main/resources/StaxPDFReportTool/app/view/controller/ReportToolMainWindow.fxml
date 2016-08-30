@@ -48,7 +48,7 @@
             <content>
               <AnchorPane>
                   <children>
-                      <fx:include source="ViewTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                      <fx:include source="/StaxPDFReportTool/app/view/controller/ViewTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   </children>
               </AnchorPane>
             </content>
@@ -57,7 +57,7 @@
             <content>
               <AnchorPane>
                   <children>
-                     <fx:include source="EditTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                     <fx:include source="/StaxPDFReportTool/app/view/controller/EditTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   </children>
               </AnchorPane>
             </content>

@@ -18,8 +18,9 @@ public class ReportModel extends ReportAppComponent {
 
     //-- constructors --//
     public ReportModel() {
-            reportViewerModel = new ViewTabModel();
         reportDocument = new ReportDocument();
+        reportViewerModel = new ViewTabModel();
+
 
     }
 

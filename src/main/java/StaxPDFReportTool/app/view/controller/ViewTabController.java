@@ -1,26 +1,32 @@
 package StaxPDFReportTool.app.view.controller;
 
+import StaxPDFReportTool.app.model.pdf.IDocument;
 import StaxPDFReportTool.app.ReportAppComponent;
 import StaxPDFReportTool.app.logic.ViewTabLogic;
+import StaxPDFReportTool.app.model.pdf.ReportDocument;
 import StaxPDFReportTool.app.model.pdf.ReportField;
 import StaxPDFReportTool.app.model.ViewTabModel;
+import javafx.embed.swing.SwingFXUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.util.Callback;
 import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPageTree;
 
 
+import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ViewTabController extends ReportAppComponent implements Initializable {
+public class ViewTabController extends ReportAppComponent implements Initializable,IDocument{
 
     //region FXML Member Variables
 
@@ -56,12 +62,10 @@ public class ViewTabController extends ReportAppComponent implements Initializab
 
 // endregion
 
-    private int numberOfPages = 0;
-    private String currentFilename = null;
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
     }
 
     //region FXML Field List View Methods
@@ -115,55 +119,78 @@ public class ViewTabController extends ReportAppComponent implements Initializab
     }
 
     private void updateViewFromModel() {
-        if (getLogic().getCurrentField() != null) {
-            partialNameTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().partialNameProperty());
-            mappingNameTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().mappingNameProperty());
 
-            alternativeNameTextField.textProperty().unbindBidirectional(getLogic().getCurrentField().altNameProperty());
-            noExportCheckBox.selectedProperty().unbindBidirectional(getLogic().getCurrentField().isNoExportProperty());
-            readOnlyCheckBox.selectedProperty().unbindBidirectional(getLogic().getCurrentField().readOnlyProperty());
-            isRequiredCheckBox.selectedProperty().unbindBidirectional(getLogic().getCurrentField().isRequiredProperty());
+        ReportField reportField = getModel().getCurrentField();
+
+        if (reportField != null) {
+            partialNameTextField.textProperty().unbindBidirectional(reportField.partialNameProperty());
+            mappingNameTextField.textProperty().unbindBidirectional(reportField.mappingNameProperty());
+            alternativeNameTextField.textProperty().unbindBidirectional(reportField.altNameProperty());
+            noExportCheckBox.selectedProperty().unbindBidirectional(reportField.isNoExportProperty());
+            readOnlyCheckBox.selectedProperty().unbindBidirectional(reportField.readOnlyProperty());
+            isRequiredCheckBox.selectedProperty().unbindBidirectional(reportField.isRequiredProperty());
         }
         int index = fieldListView.getSelectionModel().getSelectedIndex();
-        getLogic().setCurrentField(getModel().getFieldList().get(index));
-       // getLogic().getCurrentField().Update();
+        getModel().setCurrentField(getModel().get(index));
+        reportField = getModel().getCurrentField();
 
-
-        if (getLogic().getCurrentField() != null) {
-            partialNameTextField.textProperty().bindBidirectional(getLogic().getCurrentField().partialNameProperty());
-            mappingNameTextField.textProperty().bindBidirectional(getLogic().getCurrentField().mappingNameProperty());
-            alternativeNameTextField.textProperty().bindBidirectional(getLogic().getCurrentField().altNameProperty());
-            noExportCheckBox.selectedProperty().bindBidirectional(getLogic().getCurrentField().isNoExportProperty());
-            readOnlyCheckBox.selectedProperty().bindBidirectional(getLogic().getCurrentField().readOnlyProperty());
-            isRequiredCheckBox.selectedProperty().bindBidirectional(getLogic().getCurrentField().isRequiredProperty());
+        if (reportField != null) {
+            partialNameTextField.textProperty().bindBidirectional(reportField.partialNameProperty());
+            mappingNameTextField.textProperty().bindBidirectional(reportField.mappingNameProperty());
+            alternativeNameTextField.textProperty().bindBidirectional(reportField.altNameProperty());
+            noExportCheckBox.selectedProperty().bindBidirectional(reportField.isNoExportProperty());
+            readOnlyCheckBox.selectedProperty().bindBidirectional(reportField.readOnlyProperty());
+            isRequiredCheckBox.selectedProperty().bindBidirectional(reportField.isRequiredProperty());
         }
 
     }
 
-    private void setupVbox() {
-        for (int i = 0; i < numberOfPages; i++) {
-            imageVBox.getChildren().add(getLogic().createPage(i));
-        }
-    }
 
-    private void openPDFFile(File file) throws Exception {
-        PDDocument document = app().model().reportViewerModel().getDocument();
+
+
+    @Override
+    public void Load(File file) throws IOException {
+        PDDocument document = reportDocument().getPdDocument();
         if (document != null) {
             document.close();
-            // documentPanel.removeAll();
-            documentPanel.getChildren().removeAll();
+            imageVBox.getChildren().removeAll();
         }
-        currentFilename = file.getAbsolutePath();
-        app().model().reportViewerModel().setDocument(PDDocument.load(file));
-        PDPageTree pageTree = app().model().reportViewerModel().getDocument().getPages();
-        numberOfPages = pageTree.getCount();
-        fieldListView.setItems(app().model().reportViewerModel().getFieldList().GetObservableList());
-        setCellFactory();
-        setupVbox();
+        reportDocument().Load(file);
+        // TODO: 8/30/2016  rendering not working!!
+        for (int i = 0; i < reportDocument().getPdPageTree().getCount(); i++) {
+            imageVBox.getChildren().add(createPage(i));
+        }
 
+
+        // TODO: 8/30/2016 FieldList Not Working
+    //fieldListView.setItems(getModel().GetObservableList());
+     //   setCellFactory();
+    }
+
+    public Image getImage(int pageNumber)  {
+        BufferedImage pageImage = null;
+        try {
+            pageImage = reportDocument().getPdfRenderer().renderImage(pageNumber,1.0f);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return SwingFXUtils.toFXImage(pageImage, null);
+    }
+    public ImageView createPage(int index) throws IOException {
+    ImageView imageView = new ImageView(getImage(index));
+        return imageView;
     }
 
 
+    @Override
+    public void Save(File file) throws IOException {
+
+    }
+
+    @Override
+    public void Close() throws IOException {
+
+    }
     //endregion
 
 
@@ -173,14 +200,21 @@ public class ViewTabController extends ReportAppComponent implements Initializab
         return app().logic().reportViewerLogic();
     }
 
- //TODO: 8/17/2016  make sure view never directly interacts with model, must go though logic
+
     public ViewTabModel getModel(){
         return app().model().reportViewerModel();
     }
 
+
+  private ReportDocument reportDocument() {
+      return app().model().reportDocument();
+  }
+
     public BorderPane getRoot() {
         return  borderPane;
     }
+
+
     //endregion
 
 

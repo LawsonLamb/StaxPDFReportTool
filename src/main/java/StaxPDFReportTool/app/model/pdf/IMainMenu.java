@@ -1,4 +1,4 @@
-package StaxPDFReportTool.app;
+package StaxPDFReportTool.app.model.pdf;
 
 import javafx.scene.Node;
 

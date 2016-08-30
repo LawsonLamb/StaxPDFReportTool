@@ -1,9 +1,8 @@
 package StaxPDFReportTool.app.model.pdf;
 
-import StaxPDFReportTool.app.IDocument;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.ListProperty;
-import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.*;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.ImageView;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -14,15 +13,13 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.pdmodel.interactive.form.PDTextField;
 import org.apache.pdfbox.rendering.PDFRenderer;
 import javafx.scene.image.Image;
-import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.UncheckedIOException;
-import java.util.*;
 import java.util.List;
 
 public class ReportDocument implements IDocument {
+
     //region Property Variables
     private ObjectProperty<PDDocument> pdDocument;
     private ObjectProperty<PDFRenderer> pdfRenderer;
@@ -30,17 +27,34 @@ public class ReportDocument implements IDocument {
     private ObjectProperty<PDAcroForm> pdAcroForm;
     private ObjectProperty<PDPageTree> pdPageTree;
     private ListProperty<PDField> fieldListProperty;
-    private IntegerProperty numberOfPages;
-    //endregion
-
-    //region variables
-    private ReportField currentField;
     private String currentFilename = null;
     //endregion
 
-
     //region Constructors
     public ReportDocument(){
+        pdDocument = new SimpleObjectProperty<>();
+        pdfRenderer = new SimpleObjectProperty<>();
+        pdDocumentCatalog = new SimpleObjectProperty<>();
+        pdAcroForm  = new SimpleObjectProperty<>();
+        pdPageTree =  new SimpleObjectProperty<>();
+        fieldListProperty = new SimpleListProperty<>();
+
+
+        pdDocument.addListener((observable, oldValue, newValue) -> {
+           pdDocument.set(newValue);
+            pdPageTree.set(newValue.getPages());
+            pdfRenderer.set(new PDFRenderer(newValue));
+            pdDocumentCatalog.set(newValue.getDocumentCatalog());
+        });
+
+        pdDocumentCatalog.addListener((observable, oldValue, newValue)->{
+            pdAcroForm.set(newValue.getAcroForm());
+        });
+
+        pdAcroForm.addListener((observable, oldValue, newValue) -> {
+            fieldListProperty.set(FXCollections.observableArrayList(newValue.getFields()));
+        });
+
     }
 
     //endregion
@@ -48,7 +62,7 @@ public class ReportDocument implements IDocument {
     //region Methods
     @Override
     public void Load(File file) throws IOException {
-
+        currentFilename = file.getAbsolutePath();
         setPdDocument(PDDocument.load(file));
     }
 
@@ -57,15 +71,21 @@ public class ReportDocument implements IDocument {
         getPdDocument().save(file);
     }
 
+    @Override
+    public void Close() throws IOException {
+        //// TODO: 8/30/2016  prompt save before close
+        if(pdDocument.get()!=null) {
+            pdDocument.get().close();
+        }
+    }
+
     public Image getImage(int pageNumber) throws IOException {
-        PDFRenderer Renderer =   pdfRenderer.get();
-        BufferedImage pageImage;
-        pageImage = Renderer.renderImage(pageNumber,1.0f);
+          BufferedImage pageImage = getPdfRenderer().renderImage(pageNumber,1.0f);
         return SwingFXUtils.toFXImage(pageImage, null);
     }
     public ImageView createPage(int index) throws IOException {
-        ImageView view = new ImageView(getImage(index));
-        return view;
+       return  new ImageView(getImage(index));
+
     }
 
     public void setFormFieldIDValues(List<PDField> fieldList) throws IOException {
@@ -153,6 +173,26 @@ public class ReportDocument implements IDocument {
         this.pdPageTree.set(pdPageTree);
     }
 
+    public ObservableList<PDField> getFieldList() {
+        return fieldListProperty.get();
+    }
+
+    public ListProperty<PDField> fieldListProperty() {
+        return fieldListProperty;
+    }
+
+    public void setFieldList(ObservableList<PDField> fieldListProperty) {
+        this.fieldListProperty.set(fieldListProperty);
+    }
+
+
+    public String getCurrentFilename() {
+        return currentFilename;
+    }
+
+    public void setCurrentFilename(String currentFilename) {
+        this.currentFilename = currentFilename;
+    }
 
 
     //endregion
