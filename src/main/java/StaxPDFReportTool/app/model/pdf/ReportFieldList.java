@@ -1,5 +1,6 @@
-package StaxPDFReportTool.app.model;
+package StaxPDFReportTool.app.model.pdf;
 
+import StaxPDFReportTool.app.model.pdf.ReportField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm;

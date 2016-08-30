@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="borderPane" prefHeight="585.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StaxPDFReportTool.app.view.controller.MainWindowController">
+    <top>
+        <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="430.0">
+            <menus>
+                <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem fx:id="openMenuItem" mnemonicParsing="false" onAction="#openMenuItemAction" text="Open" />
+                        <MenuItem fx:id="saveMenuItem" mnemonicParsing="false" onAction="#saveMenuitemAction" text="Save " />
+                        <MenuItem fx:id="saveAsMenuItem" mnemonicParsing="false" onAction="#saveAsMenuItemAction" text="Save As" />
+                        <Menu fx:id="exportMenuBar" mnemonicParsing="false" text="Export">
+                            <items>
+                                <MenuItem fx:id="saveAsImageMenuItem" mnemonicParsing="false" text="Image" />
+                            </items>
+                        </Menu>
+                        <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" onAction="#exitMenuItemAction" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit" />
+                <Menu mnemonicParsing="false" text="View" />
+                <Menu mnemonicParsing="false" text="Form">
+                    <items>
+                        <Menu mnemonicParsing="false" text="Field Values">
+                            <items>
+                                <MenuItem fx:id="setIdAsMenuItem" mnemonicParsing="false" onAction="#setIdAsMenuItemAction" text="Set ID's as Value" />
+                                <MenuItem fx:id="setMappingIdAsValueMenuItem" mnemonicParsing="false" onAction="#setMappingIdAsValueMenuItemAction" text="Set Mapping ID as Value" />
+                            </items>
+                        </Menu>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+    </top>
+   <center>
+      <TabPane side="LEFT" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="View">
+            <content>
+              <AnchorPane>
+                  <children>
+                      <fx:include source="ViewTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Edit">
+            <content>
+              <AnchorPane>
+                  <children>
+                     <fx:include source="EditTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  </children>
+              </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Compare">
+              <content>
+                <AnchorPane />
+              </content>
+            </Tab>
+            <Tab text="Create">
+              <content>
+                <AnchorPane />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+
+</BorderPane>

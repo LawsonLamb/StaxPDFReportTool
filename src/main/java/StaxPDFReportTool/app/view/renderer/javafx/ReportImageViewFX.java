@@ -2,14 +2,12 @@ package StaxPDFReportTool.app.view.renderer.javafx;
 
 import StaxPDFReportTool.app.view.renderer.acroforms.javaFX.ReportCheckBoxFX;
 import StaxPDFReportTool.app.view.renderer.acroforms.javaFX.ReportTextFieldFX;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import org.apache.pdfbox.pdmodel.interactive.form.PDCheckBox;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.pdmodel.interactive.form.PDTextField;
 
-import javax.swing.text.html.ListView;
 import java.util.List;
 
 public class ReportImageViewFX extends ImageView {

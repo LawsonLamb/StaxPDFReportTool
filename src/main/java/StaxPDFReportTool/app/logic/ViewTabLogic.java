@@ -1,13 +1,15 @@
 package StaxPDFReportTool.app.logic;
 
+import StaxPDFReportTool.app.IDocument;
 import StaxPDFReportTool.app.ReportAppComponent;
-import StaxPDFReportTool.app.model.ReportField;
-import StaxPDFReportTool.app.model.ReportViewerModel;
-import StaxPDFReportTool.app.view.controller.PDFViewer;
+import StaxPDFReportTool.app.model.pdf.ReportField;
+import StaxPDFReportTool.app.model.ViewTabModel;
+import StaxPDFReportTool.app.view.controller.ViewTabController;
 import StaxPDFReportTool.app.view.controller.ReportViewComponent;
 import javafx.embed.swing.SwingFXUtils;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import jdk.nashorn.internal.objects.annotations.Getter;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.pdmodel.interactive.form.PDTextField;
@@ -21,38 +23,29 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.List;
 
-public class ReportViewerLogic extends ReportAppComponent{
+public class ViewTabLogic extends ReportAppComponent{
 
     //-- logging --//
-    private static final Logger logger = LoggerFactory.getLogger(ReportViewerLogic.class);
+    private static final Logger logger = LoggerFactory.getLogger(ViewTabLogic.class);
 
     //-- properties --//
     private ReportField currentField;
-    private String currentFilename = null;
-    //-- constructors --//
+  private String currentFilename = null;
+
+    // methods//
     public ReportField getCurrentField(){
         return currentField;
     }
-
     public void setCurrentField(ReportField field){
         currentField = field;
     }
-
-
-    public void exitApplication()
-    {
-        try
-        {
+    public void exitApplication() throws IOException {
             PDDocument pdfDocument = app().model().reportViewerModel().getDocument();
             if (pdfDocument!= null)
             {
                 pdfDocument.close();
             }
-        }
-        catch (IOException io)
-        {
 
-        }
 
     }
 
@@ -71,13 +64,8 @@ public class ReportViewerLogic extends ReportAppComponent{
         return view;
     }
 
-    public File savePDF(String filePath){
-        File file = new File(filePath);
-
-        return file;
-    }
     public void setFormFieldIDValues() throws IOException {
-        List<PDField> fieldList = getModel().getDocument().getDocumentCatalog().getAcroForm().getFields();
+        List<PDField> fieldList = viewTabModel().getDocument().getDocumentCatalog().getAcroForm().getFields();
         for (int i = 0; i < fieldList.size(); i++) {
             PDField pdField = fieldList.get(i);
             if (pdField.getClass() == PDTextField.class) {
@@ -86,9 +74,7 @@ public class ReportViewerLogic extends ReportAppComponent{
             }
         }
     }
-
     public void setFormFieldMappingValues(List<PDField> fieldList) throws IOException {
-
 
         for (int i = 0; i < fieldList.size(); i++) {
             PDField pdField = fieldList.get(i);
@@ -99,13 +85,10 @@ public class ReportViewerLogic extends ReportAppComponent{
     }
 
 
-    public ReportViewerModel getModel(){
+    public ViewTabModel viewTabModel(){
      return   app().model().reportViewerModel();
     }
-    public ReportViewComponent<PDFViewer> getView(){
-        return app().view().pdfViewerReportViewComponent();
-    }
-
+    public ReportViewComponent<ViewTabController> viewTabViewComponent(){return app().view().pdfViewerReportViewComponent();}
 
 
 }

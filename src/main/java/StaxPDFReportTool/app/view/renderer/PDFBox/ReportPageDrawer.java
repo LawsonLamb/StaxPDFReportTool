@@ -7,7 +7,6 @@ import org.apache.pdfbox.pdmodel.interactive.form.PDField;
 import org.apache.pdfbox.rendering.PageDrawer;
 import org.apache.pdfbox.rendering.PageDrawerParameters;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class ReportPageDrawer extends PageDrawer {

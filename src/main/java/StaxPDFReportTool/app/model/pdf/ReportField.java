@@ -1,4 +1,4 @@
-package StaxPDFReportTool.app.model;
+package StaxPDFReportTool.app.model.pdf;
 
 import javafx.beans.property.*;
 import org.apache.pdfbox.pdmodel.interactive.form.PDField;

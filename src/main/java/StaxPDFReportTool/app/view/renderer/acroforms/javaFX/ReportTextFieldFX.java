@@ -1,7 +1,6 @@
 package StaxPDFReportTool.app.view.renderer.acroforms.javaFX;
 
 import javafx.geometry.Point2D;
-import javafx.scene.Node;
 import javafx.scene.control.TextField;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationWidget;

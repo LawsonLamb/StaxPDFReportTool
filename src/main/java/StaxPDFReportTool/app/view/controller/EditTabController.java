@@ -1,18 +1,21 @@
 package StaxPDFReportTool.app.view.controller;
 
 import StaxPDFReportTool.app.ReportAppComponent;
-import StaxPDFReportTool.app.model.ReportField;
-import StaxPDFReportTool.app.model.ReportViewerModel;
+import StaxPDFReportTool.app.model.pdf.ReportField;
+import StaxPDFReportTool.app.model.ViewTabModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.TreeItem;
 import javafx.scene.control.TreeView;
+import org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationWidget;
 
 import java.net.URL;
+import java.util.List;
 import java.util.ResourceBundle;
 
-public class PdfFormPropertyPaneController extends ReportAppComponent implements Initializable {
+public class EditTabController extends ReportAppComponent implements Initializable {
 
     @FXML
     private TableView<ReportField> fieldTableView;
@@ -39,7 +42,7 @@ public class PdfFormPropertyPaneController extends ReportAppComponent implements
     private TableColumn<ReportField, Boolean> isRequiredCol;
 
     @FXML
-    private TreeView<ReportField> widgetTreeView;
+    private TreeView<String> widgetTreeView;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
@@ -47,7 +50,7 @@ public class PdfFormPropertyPaneController extends ReportAppComponent implements
 
     }
     public void Open(){
-
+        setupTree();
         fieldTableView.setItems(getViewerModel().getFieldList().GetObservableList());
         partialNameCol.setCellValueFactory(p -> p.getValue().partialNameProperty());
         mappingNameCol.setCellValueFactory(p->p.getValue().mappingNameProperty());
@@ -60,14 +63,31 @@ public class PdfFormPropertyPaneController extends ReportAppComponent implements
     }
 
     private void setupTree(){
+        TreeItem<String> rootItem = new TreeItem<>("root");
+        rootItem.setExpanded(true);
+        List<ReportField> reportFields = getViewerModel().getFieldList().GetObservableList();
+        for(int i=0; i< reportFields.size();i++){
+         ReportField reportField  = getViewerModel().getFieldList().GetObservableList().get(i);
+          TreeItem<String> fieldRoot = new TreeItem<>("field");
+            System.out.println(reportField.getField().getAlternateFieldName());
+            rootItem.getChildren().add(fieldRoot);
+            for(PDAnnotationWidget widget: reportField.getField().getWidgets()){
+                TreeItem<String> widgetTreeItem = new TreeItem<>("widget");
+                fieldRoot.getChildren().add(widgetTreeItem);
+            }
+
+        }
 
 
+    widgetTreeView.setRoot(rootItem);
 
     }
 
-    public ReportViewerModel getViewerModel(){
+    public ViewTabModel getViewerModel(){
         return app().model().reportViewerModel();
     }
+
+
 
 
 

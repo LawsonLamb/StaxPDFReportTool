@@ -1,31 +1,28 @@
 package StaxPDFReportTool.app;
 
-import StaxPDFReportTool.app.view.controller.PDFViewer;
-import StaxPDFReportTool.app.view.controller.PdfFormPropertyPaneController;
-import StaxPDFReportTool.app.view.controller.PdfPropertyPaneController;
-import StaxPDFReportTool.app.view.controller.ReportViewComponent;
+import StaxPDFReportTool.app.view.controller.*;
 import javafx.stage.Stage;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.IOException;
 
 public class ReportView extends ReportAppComponent{
         //-- logging --//
         private static final Logger logger = LoggerFactory.getLogger(ReportView.class);
         //-- properties --//
         private Stage stage;
-        private ReportViewComponent<PDFViewer> pdfViewerReportViewComponent;
+        private ReportViewComponent<ViewTabController> pdfViewerReportViewComponent;
+        private ReportViewComponent<MainWindowController> mainWindowControllerReportViewComponent;
         private ReportViewComponent<PdfPropertyPaneController> pdfPropertyPaneControllerReportViewComponent;
-        private ReportViewComponent<PdfFormPropertyPaneController> pdfFormPropertyPaneControllerReportViewComponent;
+        private ReportViewComponent<EditTabController> pdfFormPropertyPaneControllerReportViewComponent;
 
         //-- constructors --//
         public ReportView(){
             try {
                 logger.info("Loading and intializing FXML view components.");
-                pdfViewerReportViewComponent = new ReportViewComponent<>("PDFViewer");
-                pdfFormPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("Form_Field_StackPane");
-                pdfFormPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("PDFPropertysStackPane");
+                mainWindowControllerReportViewComponent = new ReportViewComponent<>("ReportToolMainWindow");
+                pdfViewerReportViewComponent = new ReportViewComponent<>("ViewTab");
+                pdfFormPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("EditTab");
+                pdfPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("PDFPropertysStackPane");
                 logger.info("Done loading and initializing FXML view components.");
             }
             catch (Throwable oopsie){
@@ -39,7 +36,7 @@ public class ReportView extends ReportAppComponent{
             this.stage = stage;
             stage.setTitle(ReportAppConstants.MAIN_WINDOW_TITLE);
             stage.setMaximized(true);
-            openPdfViewer();
+          openMainWindow();
             stage.show();
         }
 
@@ -47,19 +44,19 @@ public class ReportView extends ReportAppComponent{
     public void openPdfViewer(){
             stage.setScene(pdfViewerReportViewComponent.scene());
         }
+    public void openMainWindow(){ stage.setScene(mainWindowControllerReportViewComponent.scene());
+        }
     public void openPdfFormPropertyPane()  {
             stage.setScene(pdfFormPropertyPaneControllerReportViewComponent.scene());
             pdfFormPropertyPaneControllerReportViewComponent.controller().Open();
         }
     public void openPdfPropertyPane(){
             stage.setScene(pdfPropertyPaneControllerReportViewComponent.scene());
-
         }
-
-    public ReportViewComponent<PDFViewer> pdfViewerReportViewComponent(){
+    public ReportViewComponent<ViewTabController> pdfViewerReportViewComponent(){
            return pdfViewerReportViewComponent;
        }
-    public ReportViewComponent<PdfFormPropertyPaneController> pdfFormPropertyPaneControllerReportViewComponent(){return pdfFormPropertyPaneControllerReportViewComponent;}
+    public ReportViewComponent<EditTabController> pdfFormPropertyPaneControllerReportViewComponent(){return pdfFormPropertyPaneControllerReportViewComponent;}
     public ReportViewComponent<PdfPropertyPaneController> pdfPropertyPaneViewComponent(){return pdfPropertyPaneControllerReportViewComponent;}
 
 }

@@ -1,7 +1,8 @@
 package StaxPDFReportTool.app;
 
+import StaxPDFReportTool.app.logic.MasterViewLogic;
 import StaxPDFReportTool.app.logic.ReportErrorLogic;
-import StaxPDFReportTool.app.logic.ReportViewerLogic;
+import StaxPDFReportTool.app.logic.ViewTabLogic;
 import javafx.application.Platform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,40 +10,39 @@ import org.slf4j.LoggerFactory;
 public class ReportLogic extends ReportAppComponent {
     //-- logging --//
     private static final Logger logger = LoggerFactory.getLogger(ReportLogic.class);
-
     //-- properties --//
     private final ReportErrorLogic errorLogic;
-    private final ReportViewerLogic reportViewerLogic;
+    private final ViewTabLogic reportViewerLogic;
+    private final MasterViewLogic masterViewLogic;
 
     //-- constructors --//
     public ReportLogic() {
         this.errorLogic = new ReportErrorLogic();
-        this.reportViewerLogic = new ReportViewerLogic();
+        this.reportViewerLogic = new ViewTabLogic();
+        this.masterViewLogic = new MasterViewLogic();
     }
 
-    //-- ReportLogic methods --//
-    public void openMainMenu() {
-       // app().view().openMainMenu();
-    }
+    //region  ReportLogic methods
 
-    // close the app
+
     public void exitApp(){
         logger.info("exiting the app" );
-
         Platform.exit();
 
     }
-    //-- StaxAppComponent homework --//
+//endregion
 
-    //-- accessors --//
+
+    //region //-- accessors --//
     public ReportErrorLogic errorLogic() {
         return errorLogic;
     }
 
 
-    public ReportViewerLogic reportViewerLogic(){
+    public ViewTabLogic reportViewerLogic(){
         return  reportViewerLogic;
     }
+//endregion
 
 
 }

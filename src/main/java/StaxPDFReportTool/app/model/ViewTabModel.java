@@ -1,5 +1,7 @@
 package StaxPDFReportTool.app.model;
 
+import StaxPDFReportTool.app.model.pdf.ReportField;
+import StaxPDFReportTool.app.model.pdf.ReportFieldList;
 import javafx.beans.property.ObjectProperty;
 import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.value.ChangeListener;
@@ -14,7 +16,7 @@ import org.apache.pdfbox.rendering.PDFRenderer;
 import java.io.File;
 import java.io.IOException;
 
-public class ReportViewerModel {
+public class ViewTabModel {
 
 
 //region Variables
@@ -25,20 +27,20 @@ public class ReportViewerModel {
     private ReportFieldList fieldList;
     //endregion
     //region Constructors
-    public ReportViewerModel(){
+    public ViewTabModel(){
     pdDocumentObjectProperty = new SimpleObjectProperty<>(null);
         setupListeners();
     }
-    public ReportViewerModel( PDDocument Document){
+    public ViewTabModel(PDDocument Document){
        setDocument(Document);
         init();
     }
-    public ReportViewerModel(File fileName) throws IOException {
+    public ViewTabModel(File fileName) throws IOException {
        setDocument(PDDocument.load(fileName));
          init();
 
     }
-    public ReportViewerModel(String FileName) throws IOException {
+    public ViewTabModel(String FileName) throws IOException {
 
         setDocument(PDDocument.load(new File(FileName)));
         init();
