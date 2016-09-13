@@ -6,6 +6,7 @@ import StaxPDFReportTool.app.logic.MasterViewLogic;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.FileChooser;
 
@@ -17,9 +18,13 @@ import java.util.ResourceBundle;
 public class MainWindowController extends ReportAppComponent implements Initializable {
     @FXML
     BorderPane borderPane;
+    @FXML
+  private Parent viewTabController;
+    @FXML
+  private Parent editTabController;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
+      //  viewTabController.setApp(this.app());
     }
 
     @FXML

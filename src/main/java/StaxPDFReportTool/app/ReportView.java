@@ -21,9 +21,9 @@ public class ReportView extends ReportAppComponent{
                 logger.info("Loading and intializing FXML view components.");
 
                 mainWindowControllerReportViewComponent = new ReportViewComponent<>("ReportToolMainWindow");
-                pdfViewerReportViewComponent = new ReportViewComponent<>("ViewTab");
-                pdfFormPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("EditTab");
-                pdfPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("PDFPropertysStackPane");
+             //   pdfViewerReportViewComponent = new ReportViewComponent<>("ViewTab");
+               // pdfFormPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("EditTab");
+              //  pdfPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("PDFPropertysStackPane");
                 logger.info("Done loading and initializing FXML view components.");
             }
             catch (Throwable oopsie){

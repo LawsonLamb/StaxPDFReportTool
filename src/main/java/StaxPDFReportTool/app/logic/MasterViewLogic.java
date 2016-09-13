@@ -19,7 +19,6 @@ public class MasterViewLogic extends ReportAppComponent implements IMainMenu{
         File file =  createFileChooser(node,"Open PDF ");
         if (file != null){
             viewTabController().Load(file);
-
         }
     }
 

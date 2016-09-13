@@ -38,6 +38,7 @@ public class ReportViewComponent<T> {
 
         logger.info("Loading FXML for " + name);
         FXMLLoader fxmlLoader = new FXMLLoader();
+        fxmlLoader.setLocation(getClass().getResource(name + ".fxml"));
         view = fxmlLoader.load(getClass().getResource(name + ".fxml").openStream());
 
         controller = fxmlLoader.getController();

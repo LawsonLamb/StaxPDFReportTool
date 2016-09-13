@@ -1,5 +1,7 @@
 package StaxPDFReportTool.app.view.controller;
 
+import StaxPDFReportTool.app.Include;
+import StaxPDFReportTool.app.ReportApp;
 import StaxPDFReportTool.app.model.pdf.IDocument;
 import StaxPDFReportTool.app.ReportAppComponent;
 import StaxPDFReportTool.app.logic.ViewTabLogic;
@@ -26,9 +28,12 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class ViewTabController extends ReportAppComponent implements Initializable,IDocument{
+public class ViewTabController implements Initializable,IDocument,Include{
+
+    private ReportApp app;
 
     //region FXML Member Variables
+
 
     @FXML
     private BorderPane borderPane;
@@ -62,6 +67,15 @@ public class ViewTabController extends ReportAppComponent implements Initializab
 
 // endregion
 
+    @Override
+    public void setApp(  ReportApp currentApp) {
+    app = currentApp;
+    }
+
+    @Override
+    public ReportApp app() {
+        return app;
+    }
 
 
     @Override
@@ -213,6 +227,7 @@ public class ViewTabController extends ReportAppComponent implements Initializab
     public BorderPane getRoot() {
         return  borderPane;
     }
+
 
 
     //endregion

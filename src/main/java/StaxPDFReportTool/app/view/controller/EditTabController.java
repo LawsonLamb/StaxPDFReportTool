@@ -1,5 +1,7 @@
 package StaxPDFReportTool.app.view.controller;
 
+import StaxPDFReportTool.app.Include;
+import StaxPDFReportTool.app.ReportApp;
 import StaxPDFReportTool.app.ReportAppComponent;
 import StaxPDFReportTool.app.model.pdf.ReportField;
 import StaxPDFReportTool.app.model.ViewTabModel;
@@ -15,8 +17,8 @@ import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class EditTabController extends ReportAppComponent implements Initializable {
-
+public class EditTabController implements Initializable,Include {
+   private ReportApp app;
     @FXML
     private TableView<ReportField> fieldTableView;
 
@@ -61,7 +63,15 @@ public class EditTabController extends ReportAppComponent implements Initializab
         isRequiredCol.setCellValueFactory(p->p.getValue().isRequiredProperty());
 
     }
+    @Override
+    public void setApp(ReportApp app) {
+        this.app = app;
+    }
 
+    @Override
+    public ReportApp app() {
+        return this.app();
+    }
     private void setupTree(){
         TreeItem<String> rootItem = new TreeItem<>("root");
         rootItem.setExpanded(true);
@@ -85,9 +95,6 @@ public class EditTabController extends ReportAppComponent implements Initializab
     public ViewTabModel getViewerModel(){
         return app().model().reportViewerModel();
     }
-
-
-
 
 
 
