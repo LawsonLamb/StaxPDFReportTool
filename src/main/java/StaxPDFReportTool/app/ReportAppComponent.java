@@ -1,10 +1,11 @@
 package StaxPDFReportTool.app;
 
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public abstract class ReportAppComponent  {
+public abstract class ReportAppComponent {
 
     //-- logging --//
     private static final Logger logger = LoggerFactory.getLogger(ReportAppComponent.class);

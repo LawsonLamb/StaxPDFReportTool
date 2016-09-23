@@ -13,7 +13,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class PdfPropertyPaneController implements Include, Initializable {
+public class PropertyTabController implements Include, Initializable {
 
     @FXML
     private TextField authorsNameTextField;
@@ -72,22 +72,21 @@ public class PdfPropertyPaneController implements Include, Initializable {
     @FXML
     private CheckBox readOnlyCheckBox;
 
-    ReportApp app;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
 
     public void Open(){
-
-        if(pdDocument()!=null) {
+    /*
             authorsNameTextField.textProperty().addListener((observable, oldValue, newValue) -> {
                 if(oldValue!=newValue) {
                     pdDocument().getDocumentInformation().setAuthor(newValue);
                 }
                 authorsNameTextField.setText( pdDocument().getDocumentInformation().getAuthor());
             });
-        }
+        */
+
     }
 
 

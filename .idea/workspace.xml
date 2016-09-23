@@ -2,27 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Added framework,still need to be able to">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/Include.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportAppComponent.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportAppComponent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportView.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/MasterViewLogic.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/MasterViewLogic.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTabController.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTabController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/MainWindowController.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/MainWindowController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportViewComponent.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportViewComponent.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/PdfPropertyPaneController.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/ViewTabLogic.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/ViewTabLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/ViewTabModel.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/ViewTabModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportApp.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/PDFPropertysStackPane.fxml" afterPath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/PDFPropertysStackPane.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/Include.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/Include.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1$1.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/EditTab.fxml" afterPath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/EditTab.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/Include.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/Include.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/MainWindowController.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/MainWindowController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportViewComponent.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportViewComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ViewTabLogic.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ViewTabLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportApp.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportApp.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/pdf/ReportDocument.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/pdf/ReportDocument.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PdfPropertyPaneController.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PropertyTabController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/MasterViewLogic.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/MasterViewLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ViewTabModel.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ViewTabModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportAppComponent.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportAppComponent.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml" afterPath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTab.fxml" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTab.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportDocument.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTabController.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTabController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportView.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportView.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java" afterPath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,30 +88,6 @@
     <ui_properties converted="true" />
     <breakpoint_rules converted="true" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="ReportView.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="374">
-                    <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-                    <folding>
-                      <element signature="method#openMainWindow#0;class#ReportView#0" expanded="false" />
-                      <element signature="method#openPdfFormPropertyPane#0;class#ReportView#0" expanded="false" />
-                      <element signature="method#pdfViewerReportViewComponent#0;class#ReportView#0" expanded="false" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
@@ -116,35 +105,13 @@
   <component name="FavoritesManager">
     <favorites_list name="JavaFxApplication" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-              <folding>
-                <element signature="method#openMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-                <element signature="method#setIdAsMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-                <element signature="method#setMappingIdAsValueMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-                <element signature="method#importFDFMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-                <element signature="method#exportFDFMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-                <element signature="method#exitMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-                <element signature="method#saveAsMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-                <element signature="method#saveMenuitemAction#0;class#MainWindowController#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
+        <option value="Singleton" />
       </list>
     </option>
   </component>
@@ -164,8 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/PDFPropertysStackPane.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/PDFBOX/ReportViewerLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxReport/PT50_DBToReportMappingValues" />
         <option value="$PROJECT_DIR$/src/main/java/StaxReport/StaxReport.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdfbox/ReportField.java" />
@@ -173,7 +138,6 @@
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdfbox/ReportViewerModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ReportField.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ReportViewerModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PdfPropertyPaneController.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PdfFormPropertyPaneController.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PDFViewer.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainMenuController.java" />
@@ -192,29 +156,32 @@
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/DocumentLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportFieldList.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/IDocument.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ViewTabLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/IMainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/IDocument.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/IMainMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ViewTabModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportDocument.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportModel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/halFX/halApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/halFX/Component.java" />
         <option value="$PROJECT_DIR$/src/main/java/halFX/Entity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/Include.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java" />
         <option value="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ViewTab.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportDocument.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ViewTabModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ViewTabLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java" />
         <option value="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java" />
         <option value="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/EditTab.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/PropertyTabModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportApp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PdfPropertyPaneController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/Include.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PropertyTabController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java" />
       </list>
     </option>
   </component>
@@ -265,11 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -285,6 +247,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ThirdParty" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jars" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,9 +311,202 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StaxPDFReportTool" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -689,40 +862,40 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32467532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23560767" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3582251" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="206" y="747" width="1027" height="118" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18230277" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32467532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58116883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23560767" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58116883" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32467532" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35714287" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="206" y="747" width="1027" height="118" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24413647" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32467532" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -772,7 +945,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="82" />
+      <option name="time" value="86" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -783,405 +956,6 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ReportLogicComponent.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ReportErrorLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="81" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/beans/value/ChangeListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/DocumentLogic.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportFieldList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="39" column="5" selection-start-line="22" selection-start-column="3" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/IMainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PdfPropertyPaneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="70" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="1785" column="0" selection-start-line="1785" selection-start-column="0" selection-end-line="1785" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/IDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/io/MemoryUsageSetting.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/beans/binding/ObjectExpression.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/cos/COSDocument.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="214" column="0" selection-start-line="214" selection-start-column="0" selection-end-line="214" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/cos/COSInteger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/pdmodel/PDPageTree.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/embed/swing/SwingFXUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/PDFPropertysStackPane.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ViewTabModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="33" column="10" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="37" column="33" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="8032" column="0" selection-start-line="8032" selection-start-column="0" selection-end-line="8032" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/halFX/halApp.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/halFX/Application.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/halFX/Component.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/halFX/Entity.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ViewTabLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/scene/Parent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="567" column="0" selection-start-line="567" selection-start-column="0" selection-end-line="567" selection-end-column="0" />
-          <folding>
-            <element signature="e#23772#23773#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/scene/layout/Pane.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="141" column="0" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/beans/property/ObjectPropertyBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/cos/COSName.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8840">
-          <caret line="536" column="0" selection-start-line="536" selection-start-column="0" selection-end-line="536" selection-end-column="0" />
-          <folding>
-            <element signature="e#32941#32942#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/cos/COSDictionary.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/pdmodel/PDDocumentCatalog.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/pdmodel/PDDocument.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="593" column="0" selection-start-line="593" selection-start-column="0" selection-end-line="593" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/ThirdParty/jars/pdfbox-app-2.0.2.jar!/org/apache/pdfbox/rendering/PDFRenderer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/jre/lib/rt.jar!/sun/misc/Unsafe.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5236">
-          <caret line="354" column="23" selection-start-line="354" selection-start-column="23" selection-end-line="354" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#createFileChooser#1;class#MasterViewLogic#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportDocument.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#ReportDocument#0;class#ReportDocument#0" expanded="false" />
-            <element signature="method#setFormFieldIDValues#0;class#ReportDocument#0" expanded="false" />
-            <element signature="method#setFormFieldMappingValues#0;class#ReportDocument#0" expanded="false" />
-            <element signature="e#4168#4169#0" expanded="false" />
-            <element signature="e#4208#4209#0" expanded="false" />
-            <element signature="method#setPdDocumentCatalog#0;class#ReportDocument#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="44" column="68" selection-start-line="44" selection-start-column="68" selection-end-line="44" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/Include.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="16" selection-start-line="25" selection-start-column="16" selection-end-line="25" selection-end-column="16" />
-          <folding>
-            <element signature="method#openMainWindow#0;class#ReportView#0" expanded="false" />
-            <element signature="method#openPdfFormPropertyPane#0;class#ReportView#0" expanded="false" />
-            <element signature="method#pdfViewerReportViewComponent#0;class#ReportView#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_101/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="2578" column="0" selection-start-line="2578" selection-start-column="0" selection-end-line="2578" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="e#1722#1723#0" expanded="true" />
-            <element signature="e#1750#1751#0" expanded="true" />
-            <element signature="e#1794#1795#0" expanded="true" />
-            <element signature="e#1820#1821#0" expanded="true" />
-            <element signature="method#setCellFactory#0;class#ViewTabController#0" expanded="false" />
-            <element signature="method#updateViewFromModel#0;class#ViewTabController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/EditTab.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="58" column="12" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="65" column="82" selection-start-line="65" selection-start-column="82" selection-end-line="65" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="67" column="23" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
-          <folding>
-            <element signature="e#2165#2166#0" expanded="true" />
-            <element signature="e#2195#2196#0" expanded="true" />
-            <element signature="e#2239#2240#0" expanded="true" />
-            <element signature="e#2272#2273#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ViewTab.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding>
-            <element signature="method#openMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#setIdAsMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#setMappingIdAsValueMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#importFDFMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#exportFDFMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#exitMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#saveAsMenuItemAction#0;class#MainWindowController#0" expanded="false" />
-            <element signature="method#saveMenuitemAction#0;class#MainWindowController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

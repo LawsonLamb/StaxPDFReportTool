@@ -13,10 +13,8 @@ public class ViewTabLogic extends ReportAppComponent{
 
     //-- properties --//
 
-    public ViewTabModel viewTabModel(){
-     return   app().model().reportViewerModel();
-    }
-    public ReportViewComponent<ViewTabController> viewTabViewComponent(){return app().view().pdfViewerReportViewComponent();}
+    public ViewTabModel viewTabModel(){return   app().model().reportViewerModel();}
+    public ViewTabController viewTabViewComponent(){return app().view().viewTabController();}
 
 
 }

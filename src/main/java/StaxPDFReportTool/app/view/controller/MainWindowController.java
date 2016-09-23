@@ -19,19 +19,23 @@ public class MainWindowController extends ReportAppComponent implements Initiali
     @FXML
     BorderPane borderPane;
     @FXML
-  private Parent viewTabController;
+    private Parent viewTabView;
     @FXML
-  private Parent editTabController;
+    private Parent editTabView;
+    @FXML
+    public EditTabController editTabViewController;
+    @FXML
+    public ViewTabController viewTabViewController;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-      //  viewTabController.setApp(this.app());
+
     }
 
     @FXML
     void openMenuItemAction(ActionEvent event) {
 
         try {
-            masterViewLogic().Open(borderPane);
+            masterViewLogic().Open(this.viewTabView);
         } catch (IOException e) {
             e.printStackTrace();
         }

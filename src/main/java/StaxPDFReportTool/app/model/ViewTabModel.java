@@ -25,13 +25,8 @@ public class ViewTabModel extends ReportAppComponent {
     //region Constructors
     public ViewTabModel() {
 
-        /*
-        reportDocument().fieldListProperty().addListener((observable, oldValue, newValue)-> {
-                if(newValue!=null){
-                    initReportFields(newValue);
-                }
-        });
-        */
+
+
 
     }
     private void initReportFields(List<PDField> pdFieldList){
@@ -47,12 +42,14 @@ public class ViewTabModel extends ReportAppComponent {
     }
 
     public ObservableList<ReportField> GetObservableList(){
+
+
         return  reportFields;
 
     }
 
     public ReportField get(int index){
-        return reportFields.get(index);
+        return reportDocument().getReportFieldObservableList().get(index);
     }
 //endregion
 

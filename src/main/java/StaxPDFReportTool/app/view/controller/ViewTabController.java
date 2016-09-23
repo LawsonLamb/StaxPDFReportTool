@@ -30,7 +30,6 @@ import java.util.ResourceBundle;
 
 public class ViewTabController implements Initializable,IDocument,Include{
 
-    private ReportApp app;
 
     //region FXML Member Variables
 
@@ -67,14 +66,11 @@ public class ViewTabController implements Initializable,IDocument,Include{
 
 // endregion
 
-    @Override
-    public void setApp(  ReportApp currentApp) {
-    app = currentApp;
-    }
+
 
     @Override
     public ReportApp app() {
-        return app;
+        return ReportApp.currentApp();
     }
 
 
@@ -177,9 +173,12 @@ public class ViewTabController implements Initializable,IDocument,Include{
 
 
         // TODO: 8/30/2016 FieldList Not Working
-    //fieldListView.setItems(getModel().GetObservableList());
-     //   setCellFactory();
+
+   fieldListView.setItems(reportDocument().getReportFieldObservableList());
+        setCellFactory();
     }
+
+
 
     public Image getImage(int pageNumber)  {
         BufferedImage pageImage = null;

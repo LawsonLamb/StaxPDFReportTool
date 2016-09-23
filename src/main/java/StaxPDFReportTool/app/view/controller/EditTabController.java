@@ -2,11 +2,11 @@ package StaxPDFReportTool.app.view.controller;
 
 import StaxPDFReportTool.app.Include;
 import StaxPDFReportTool.app.ReportApp;
-import StaxPDFReportTool.app.ReportAppComponent;
+import StaxPDFReportTool.app.model.pdf.ReportDocument;
 import StaxPDFReportTool.app.model.pdf.ReportField;
-import StaxPDFReportTool.app.model.ViewTabModel;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TreeItem;
@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class EditTabController implements Initializable,Include {
-   private ReportApp app;
+
     @FXML
     private TableView<ReportField> fieldTableView;
 
@@ -45,15 +45,21 @@ public class EditTabController implements Initializable,Include {
 
     @FXML
     private TreeView<String> widgetTreeView;
+
+    @FXML
+    private Parent propertyView;
+
+    public PropertyTabController propertyViewController;
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
 
-
     }
+
     public void Open(){
-        setupTree();
-        fieldTableView.setItems(getViewerModel().GetObservableList());
+       setupTree();
+        fieldTableView.setItems(getViewerModel().getReportFieldObservableList());
         partialNameCol.setCellValueFactory(p -> p.getValue().partialNameProperty());
         mappingNameCol.setCellValueFactory(p->p.getValue().mappingNameProperty());
         altNameCol.setCellValueFactory(p->p.getValue().altNameProperty());
@@ -61,23 +67,21 @@ public class EditTabController implements Initializable,Include {
         noExportCol.setCellValueFactory(p->p.getValue().isNoExportProperty());
         readOnlyCol.setCellValueFactory(p->p.getValue().readOnlyProperty());
         isRequiredCol.setCellValueFactory(p->p.getValue().isRequiredProperty());
+      //  propertyViewController.Open();
 
     }
-    @Override
-    public void setApp(ReportApp app) {
-        this.app = app;
-    }
+
 
     @Override
     public ReportApp app() {
-        return this.app();
+        return ReportApp.currentApp();
     }
     private void setupTree(){
         TreeItem<String> rootItem = new TreeItem<>("root");
         rootItem.setExpanded(true);
-        List<ReportField> reportFields = getViewerModel().GetObservableList();
+        List<ReportField> reportFields = getViewerModel().getReportFieldObservableList();
         for(int i=0; i< reportFields.size();i++){
-         ReportField reportField  = getViewerModel().get(i);
+         ReportField reportField  = getViewerModel().getReportFieldObservableList().get(i);
           TreeItem<String> fieldRoot = new TreeItem<>("field");
             System.out.println(reportField.getField().getAlternateFieldName());
             rootItem.getChildren().add(fieldRoot);
@@ -92,8 +96,8 @@ public class EditTabController implements Initializable,Include {
 
     }
 
-    public ViewTabModel getViewerModel(){
-        return app().model().reportViewerModel();
+    public ReportDocument getViewerModel(){
+        return app().model().reportDocument();
     }
 
 

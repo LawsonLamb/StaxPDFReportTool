@@ -45,7 +45,6 @@ public class ReportViewComponent<T> {
 
         scene = new Scene(view, 800, 600);
     }
-
     //-- Object homework --//
     @Override
     public String toString() {

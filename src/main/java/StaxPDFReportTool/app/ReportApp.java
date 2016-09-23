@@ -29,7 +29,6 @@ public class ReportApp extends Application{
         currentApp = this;
         model = new ReportModel();
         view = new ReportView();
-
         logic = new ReportLogic();
     }
 

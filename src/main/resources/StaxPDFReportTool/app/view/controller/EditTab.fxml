@@ -21,8 +21,8 @@
                            <children>
                               <TableView fx:id="fieldTableView" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                 <columns>
-                                  <TableColumn fx:id="partialNameCol" prefWidth="121.0" sortable="false" text="Partial Name" />
-                                  <TableColumn fx:id="mappingNameCol" prefWidth="108.0" sortable="false" text="Mapping Name" />
+                                    <TableColumn fx:id="partialNameCol" prefWidth="121.0" sortable="false" text="Partial Name" />
+                                    <TableColumn fx:id="mappingNameCol" prefWidth="108.0" sortable="false" text="Mapping Name" />
                                     <TableColumn fx:id="altNameCol" prefWidth="127.0" sortable="false" text="Alternative Name" />
                                     <TableColumn fx:id="typeCol" editable="false" prefWidth="92.0" sortable="false" text="Field Type" />
                                     <TableColumn fx:id="noExportCol" prefWidth="75.0" sortable="false" text="No Export" />
@@ -51,11 +51,10 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
              <children>
-                 <fx:include source="PDFPropertysStackPane.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                 <fx:include fx:id="propertyView" source="PDFPropertysStackPane.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
              </children>
           </AnchorPane>
-
-                    </content>
+        </content>
       </Tab>
   </tabs>
 </TabPane>

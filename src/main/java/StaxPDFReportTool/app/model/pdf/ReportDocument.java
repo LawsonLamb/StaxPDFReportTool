@@ -16,6 +16,7 @@ import javafx.scene.image.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ReportDocument implements IDocument {
@@ -27,6 +28,12 @@ public class ReportDocument implements IDocument {
     private ObjectProperty<PDAcroForm> pdAcroForm;
     private ObjectProperty<PDPageTree> pdPageTree;
     private ListProperty<PDField> fieldListProperty;
+
+    public ObservableList<ReportField> getReportFieldObservableList() {
+        return reportFieldObservableList;
+    }
+
+    private ObservableList<ReportField> reportFieldObservableList;
     private String currentFilename = null;
     //endregion
 
@@ -54,6 +61,19 @@ public class ReportDocument implements IDocument {
         pdAcroForm.addListener((observable, oldValue, newValue) -> {
             fieldListProperty.set(FXCollections.observableArrayList(newValue.getFields()));
         });
+
+        fieldListProperty.addListener(((observable, oldValue, newValue) -> {
+
+                    ArrayList<ReportField> reportFieldArrayList = new ArrayList<>();
+
+                    for (int i = 0; i < newValue.size(); i++) {
+                        reportFieldArrayList.add(new ReportField(newValue.get(i)));
+
+                    }
+                   reportFieldObservableList = FXCollections.observableList(reportFieldArrayList);
+
+
+        }));
 
     }
 
@@ -107,6 +127,7 @@ public class ReportDocument implements IDocument {
             }
         }
     }
+
 
 
 

@@ -10,9 +10,9 @@ public class ReportView extends ReportAppComponent{
         private static final Logger logger = LoggerFactory.getLogger(ReportView.class);
         //-- properties --//
         private Stage stage;
-        private ReportViewComponent<ViewTabController> pdfViewerReportViewComponent;
-        private ReportViewComponent<MainWindowController> mainWindowControllerReportViewComponent;
-        private ReportViewComponent<PdfPropertyPaneController> pdfPropertyPaneControllerReportViewComponent;
+
+        private ReportViewComponent<MainWindowController> masterControllerViewComponent;
+        private ReportViewComponent<PropertyTabController> pdfPropertyPaneControllerReportViewComponent;
         private ReportViewComponent<EditTabController> pdfFormPropertyPaneControllerReportViewComponent;
 
         //-- constructors --//
@@ -20,7 +20,7 @@ public class ReportView extends ReportAppComponent{
             try {
                 logger.info("Loading and intializing FXML view components.");
 
-                mainWindowControllerReportViewComponent = new ReportViewComponent<>("ReportToolMainWindow");
+                masterControllerViewComponent = new ReportViewComponent<>("ReportToolMainWindow");
              //   pdfViewerReportViewComponent = new ReportViewComponent<>("ViewTab");
                // pdfFormPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("EditTab");
               //  pdfPropertyPaneControllerReportViewComponent = new ReportViewComponent<>("PDFPropertysStackPane");
@@ -37,27 +37,19 @@ public class ReportView extends ReportAppComponent{
             this.stage = stage;
             stage.setTitle(ReportAppConstants.MAIN_WINDOW_TITLE);
             stage.setMaximized(true);
-          openMainWindow();
+            openMainWindow();
             stage.show();
         }
 
 
-    public void openPdfViewer(){
-            stage.setScene(pdfViewerReportViewComponent.scene());
+    
+    public void openMainWindow(){ stage.setScene(masterControllerViewComponent.scene());
         }
-    public void openMainWindow(){ stage.setScene(mainWindowControllerReportViewComponent.scene());
-        }
-    public void openPdfFormPropertyPane()  {
-            stage.setScene(pdfFormPropertyPaneControllerReportViewComponent.scene());
-            pdfFormPropertyPaneControllerReportViewComponent.controller().Open();
-        }
-    public void openPdfPropertyPane(){
-            stage.setScene(pdfPropertyPaneControllerReportViewComponent.scene());
-        }
-    public ReportViewComponent<ViewTabController> pdfViewerReportViewComponent(){
-           return pdfViewerReportViewComponent;
+  
+    public ViewTabController viewTabController(){
+           return masterControllerViewComponent.controller().viewTabViewController;
        }
-    public ReportViewComponent<EditTabController> pdfFormPropertyPaneControllerReportViewComponent(){return pdfFormPropertyPaneControllerReportViewComponent;}
-    public ReportViewComponent<PdfPropertyPaneController> pdfPropertyPaneViewComponent(){return pdfPropertyPaneControllerReportViewComponent;}
+    public EditTabController editTabController(){return  masterControllerViewComponent.controller().editTabViewController;}
+    public ReportViewComponent<PropertyTabController> pdfPropertyPaneViewComponent(){return pdfPropertyPaneControllerReportViewComponent;}
 
 }
