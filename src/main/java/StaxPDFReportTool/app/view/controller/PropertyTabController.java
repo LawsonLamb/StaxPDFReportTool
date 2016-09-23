@@ -1,16 +1,19 @@
 package StaxPDFReportTool.app.view.controller;
 
+import StaxPDFReportTool.app.Include;
+import StaxPDFReportTool.app.ReportApp;
 import StaxPDFReportTool.app.ReportAppComponent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import org.apache.pdfbox.pdmodel.PDDocument;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class PdfPropertyPaneController extends ReportAppComponent implements Initializable {
+public class PdfPropertyPaneController implements Include, Initializable {
 
     @FXML
     private TextField authorsNameTextField;
@@ -69,10 +72,34 @@ public class PdfPropertyPaneController extends ReportAppComponent implements Ini
     @FXML
     private CheckBox readOnlyCheckBox;
 
+    ReportApp app;
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
     }
 
+    public void Open(){
+
+        if(pdDocument()!=null) {
+            authorsNameTextField.textProperty().addListener((observable, oldValue, newValue) -> {
+                if(oldValue!=newValue) {
+                    pdDocument().getDocumentInformation().setAuthor(newValue);
+                }
+                authorsNameTextField.setText( pdDocument().getDocumentInformation().getAuthor());
+            });
+        }
+    }
+
+
+
+
+    @Override
+    public ReportApp app() {
+        return ReportApp.currentApp();
+    }
+
+    public PDDocument pdDocument(){
+        return app().model().reportDocument().getPdDocument();
+    }
 
 }
