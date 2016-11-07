@@ -8,7 +8,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.FileChooser;
 
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.transform.TransformerException;
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -93,6 +97,18 @@ public class MainWindowController extends ReportAppComponent implements Initiali
             }
         }
         */
+    }
+    @FXML
+    void exportXMLOnAction(ActionEvent event){
+
+        try {
+            app().model().exportToXmlMapping();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @FXML

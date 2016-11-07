@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="585.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hermesviewer.app.view.controller.MainWindowController">
+<BorderPane prefHeight="585.0" prefWidth="713.0" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hermesviewer.app.view.controller.MainWindowController">
     <top>
         <MenuBar fx:id="menuBar" prefHeight="29.0" prefWidth="430.0">
             <menus>
@@ -20,6 +20,7 @@
                         <Menu fx:id="exportMenuBar" mnemonicParsing="false" text="Export">
                             <items>
                                 <MenuItem fx:id="saveAsImageMenuItem" mnemonicParsing="false" text="Image" />
+                        <MenuItem mnemonicParsing="false" onAction="#exportXMLOnAction" text="XML-Mapping" />
                             </items>
                         </Menu>
                         <MenuItem fx:id="exitMenuItem" mnemonicParsing="false" onAction="#exitMenuItemAction" text="Exit" />
@@ -57,7 +58,7 @@
             <content>
               <AnchorPane>
                   <children>
-                     <fx:include fx:id="editTabView" source="EditTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"/>
+                     <fx:include fx:id="editTabView" source="EditTab.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
                   </children>
               </AnchorPane>
             </content>

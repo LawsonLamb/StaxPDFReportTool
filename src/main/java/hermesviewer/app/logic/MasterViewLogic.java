@@ -55,6 +55,8 @@ public class MasterViewLogic extends ReportAppComponent implements IMainMenu{
         return fileChooser.showOpenDialog(node.getScene().getWindow());
     }
 
+
+
     public ReportDocument documentModel(){
         return app().model().reportDocument();
     }

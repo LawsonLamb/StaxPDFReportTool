@@ -37,9 +37,6 @@ public class ReportDocument extends SimpleObjectProperty<PDDocument> implements 
     //region Constructors
     public ReportDocument(){
         this.addListener((observable, oldValue, newValue) -> onChanged(newValue));
-
-
-
     }
 
     //endregion

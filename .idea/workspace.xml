@@ -2,115 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Added framework,still need to be able to">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/Corab.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/Interfaces/ISave.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/Interfaces/Open.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/Interfaces/Update.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocumentCatalog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocumentInformation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocumentNameDestinationDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocumentNameDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportPageLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportPageMode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportPageTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportResources.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/common/ReportDestinationOrAction.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/common/ReportMetadata.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/common/ReportPageLabels.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/documentinterchange/logicalstructure/ReportMarkInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/documentinterchange/logicalstructure/ReportStructureTreeRoot.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/documentinterchange/outline/ReportDocumentOutline.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/graphics/ReportOptionalContentProperties.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/graphics/color/ReportOutputIntent.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportAcroForm.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportDocumentCatalogAdditionalActions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportViewerPreferences.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/action/ReportURIDictionary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/documentnavigation/destination/ReportPageDestination.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/pagenavigation/ReportThread.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/rendering/ReportRenderer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/interfaces/IDocument.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/interfaces/Include.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/interfaces/Update.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/ReportDocumentInformationViewController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/ReportDocumentInformationTab.fxml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/Include.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/Logic/ReportErrorLogic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportApp.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportAppComponent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportAppConstants.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportLogic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/ReportView.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/System/SystemLib.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/System/SystemServices.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/MasterViewLogic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/logic/ViewTabLogic.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/ViewTabModel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/pdf/IDocument.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/pdf/IMainMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/pdf/ReportDocument.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/pdf/ReportField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/model/pdf/ReportFieldList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTab.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/EditTabController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/MainWindowController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/PDFPropertysStackPane.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/PropertyTabController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ReportViewComponent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTab.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/controller/ViewTabController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/PDFBox/ReportPageDrawer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/acroforms/AcroRenderer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/acroforms/javaFX/ReportCheckBoxFX.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/acroforms/javaFX/ReportTextFieldFX.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/canvas/PDFCanvas.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/javafx/ReportImageViewFX.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/javafx/ReportPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxPDFReportTool/app/view/renderer/javafx/ReportPagination.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxReport/PT50_DBToReportMappingValues" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/StaxReport/StaxReport.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/Include.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/IDocument.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportFieldList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/PropertyTabController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/StaxReport/PT50_DBToReportMappingValues" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/StaxReport/StaxReport.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/PDFPropertysStackPane.fxml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermes/report/pdmodel/ReportDocument.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermes/report/pdmodel/ReportDocument.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/ReportModel.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/ReportModel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/logic/MasterViewLogic.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/logic/MasterViewLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/view/controller/MainWindowController.class" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/view/controller/MainWindowController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportApp.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportApp.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppComponent.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportAppComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportAppConstants.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportAppConstants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportLogic.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportLogic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportModel.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/ReportView.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/MasterViewLogic.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ReportErrorLogic.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/ReportErrorLogic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/logic/ViewTabLogic.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/ViewTabLogic.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/ViewTabModel.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/model/ViewTabModel.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/IMainMenu.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/interfaces/IMainMenu.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportDocument.java" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportField.java" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/ReportField.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/system/SystemLib.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/system/SystemLib.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/system/SystemServices.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/system/SystemServices.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/EditTabController.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/EditTabController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/MainWindowController.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/MainWindowController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ReportViewComponent.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/ReportViewComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/controller/ViewTabController.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/ViewTabController.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/PDFBox/ReportPageDrawer.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/PDFBox/ReportPageDrawer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/acroforms/AcroRenderer.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/acroforms/AcroRenderer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/acroforms/javaFX/ReportCheckBoxFX.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/acroforms/javaFX/ReportCheckBoxFX.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/acroforms/javaFX/ReportTextFieldFX.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/acroforms/javaFX/ReportTextFieldFX.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/canvas/PDFCanvas.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/canvas/PDFCanvas.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/javafx/ReportImageViewFX.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/javafx/ReportImageViewFX.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/javafx/ReportPage.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/javafx/ReportPage.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/view/renderer/javafx/ReportPagination.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/renderer/javafx/ReportPagination.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/EditTab.fxml" afterPath="$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/EditTab.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ReportToolMainWindow.fxml" afterPath="$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/ReportToolMainWindow.fxml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/StaxPDFReportTool/app/view/controller/ViewTab.fxml" afterPath="$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/ViewTab.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/view/controller/ReportToolMainWindow.fxml" afterPath="$PROJECT_DIR$/out/production/StaxPDFReportTool/hermesviewer/app/view/controller/ReportToolMainWindow.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java" afterPath="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportModel.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/MainWindowController.java" afterPath="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/MainWindowController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/ReportToolMainWindow.fxml" afterPath="$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/ReportToolMainWindow.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -182,31 +84,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReportDocument.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#close#0;class#ReportDocument#0" expanded="false" />
-                <element signature="method#getImage#0;class#ReportDocument#0" expanded="false" />
-                <element signature="method#createPage#0;class#ReportDocument#0" expanded="false" />
-                <element signature="method#setFormFieldIDValues#0;class#ReportDocument#0" expanded="false" />
-                <element signature="method#setFormFieldMappingValues#0;class#ReportDocument#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewTabController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewTabController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/ViewTabController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="1173">
               <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding>
-                <element signature="e#2187#2188#0" expanded="true" />
-                <element signature="e#2218#2219#0" expanded="true" />
                 <element signature="method#setCellFactory#0;class#ViewTabController#0" expanded="false" />
                 <element signature="method#updateViewFromModel#0;class#ViewTabController#0" expanded="false" />
                 <element signature="method#load#0;class#ViewTabController#0" expanded="false" />
@@ -216,6 +99,66 @@
                 <element signature="method#close#0;class#ViewTabController#0" expanded="false" />
                 <element signature="method#getLogic#0;class#ViewTabController#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MasterViewLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportDocument.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportModel.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindowController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/MainWindowController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1564">
+              <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportAcroForm.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportAcroForm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1836">
+              <caret line="140" column="54" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="54" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -248,9 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/report/pdfbox/pdmodel/documentnavigation/outline/PDDocumentOutlineProperty.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/interfaces/IDocument.java" />
-        <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/interfaces/IMainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/interfaces/Update.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/interfaces/Include.java" />
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/report/pdfbox/pdmodel/PDDocumentNameDictionaryProperty.java" />
@@ -264,7 +204,6 @@
         <option value="$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/report/pdfbox/pdmodel/PDDocumentCatalogProperty.java" />
         <option value="$PROJECT_DIR$/src/main/java/pdfboxFX/pdfbox/pdmodel/PDDocumentCatalogProperty.java" />
         <option value="$PROJECT_DIR$/src/main/java/pdfboxFX/pdmodel/PDDocumentCatalogProperty.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermes/pdmodel/PageLayoutProperty.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermes/interactive/PDAcroFormProperty.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermes/report/interactive/pdmodel/PDDocumentCatalogProperty.java" />
@@ -295,10 +234,14 @@
         <option value="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportAcroForm.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/model/ViewTabModel.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/EditTabController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/ReportDocumentInformationViewController.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocumentInformation.java" />
         <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/ViewTabController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/ReportToolMainWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/MainWindowController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java" />
       </list>
     </option>
   </component>
@@ -314,10 +257,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1288" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1296" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -349,11 +292,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -382,77 +325,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ThirdParty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StaxPDFReportTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StaxPDFReportTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThirdParty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="slf4j-api-1.7.21.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StaxPDFReportTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StaxPDFReportTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ThirdParty" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jars" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pdfbox-app-2.0.2.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StaxPDFReportTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StaxPDFReportTool" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -475,6 +352,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -861,8 +742,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1288" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -871,12 +752,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23560767" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35714287" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="206" y="747" width="1027" height="118" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29147464" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" x="206" y="747" width="1027" height="118" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32683983" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24413647" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37055016" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -958,111 +839,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocumentCatalog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3527#3528#0" expanded="true" />
-            <element signature="e#3562#3563#0" expanded="true" />
-            <element signature="e#4950#4951#0" expanded="true" />
-            <element signature="e#4981#4982#0" expanded="true" />
-            <element signature="e#5019#5020#0" expanded="true" />
-            <element signature="e#5056#5057#0" expanded="true" />
-            <element signature="e#5104#5105#0" expanded="true" />
-            <element signature="e#5135#5136#0" expanded="true" />
-            <element signature="e#5187#5188#0" expanded="true" />
-            <element signature="e#5230#5231#0" expanded="true" />
-            <element signature="e#6424#6425#0" expanded="true" />
-            <element signature="e#6474#6475#0" expanded="true" />
-            <element signature="e#6542#6543#0" expanded="true" />
-            <element signature="e#6586#6587#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
-            <element signature="e#6812#6813#0" expanded="true" />
-            <element signature="e#6860#6861#0" expanded="true" />
-            <element signature="e#6891#6892#0" expanded="true" />
-            <element signature="e#6939#6940#0" expanded="true" />
-            <element signature="e#6982#6983#0" expanded="true" />
-            <element signature="e#7027#7028#0" expanded="true" />
-            <element signature="e#7070#7071#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7161#7162#0" expanded="true" />
-            <element signature="e#7225#7226#0" expanded="true" />
-            <element signature="e#7280#7281#0" expanded="true" />
-            <element signature="e#7325#7326#0" expanded="true" />
-            <element signature="e#7368#7369#0" expanded="true" />
-            <element signature="e#7422#7423#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7523#7524#0" expanded="true" />
-            <element signature="e#7578#7579#0" expanded="true" />
-            <element signature="e#7651#7652#0" expanded="true" />
-            <element signature="e#7708#7709#0" expanded="true" />
-            <element signature="e#7790#7791#0" expanded="true" />
-            <element signature="e#7841#7842#0" expanded="true" />
-            <element signature="e#8564#8565#0" expanded="true" />
-            <element signature="e#8609#8610#0" expanded="true" />
-            <element signature="e#8667#8668#0" expanded="true" />
-            <element signature="e#8706#8707#0" expanded="true" />
-            <element signature="e#8776#8777#0" expanded="true" />
-            <element signature="e#8835#8836#0" expanded="true" />
-            <element signature="e#8882#8883#0" expanded="true" />
-            <element signature="e#8927#8928#0" expanded="true" />
-            <element signature="e#8985#8986#0" expanded="true" />
-            <element signature="e#9024#9025#0" expanded="true" />
-            <element signature="e#9092#9093#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9194#9195#0" expanded="true" />
-            <element signature="e#9237#9238#0" expanded="true" />
-            <element signature="e#9291#9292#0" expanded="true" />
-            <element signature="e#9328#9329#0" expanded="true" />
-            <element signature="e#9390#9391#0" expanded="true" />
-            <element signature="e#9445#9446#0" expanded="true" />
-            <element signature="e#9490#9491#0" expanded="true" />
-            <element signature="e#9533#9534#0" expanded="true" />
-            <element signature="e#9587#9588#0" expanded="true" />
-            <element signature="e#9624#9625#0" expanded="true" />
-            <element signature="e#9688#9689#0" expanded="true" />
-            <element signature="e#9743#9744#0" expanded="true" />
-            <element signature="e#9806#9807#0" expanded="true" />
-            <element signature="e#9858#9859#0" expanded="true" />
-            <element signature="e#9930#9931#0" expanded="true" />
-            <element signature="e#9976#9977#0" expanded="true" />
-            <element signature="e#10195#10196#0" expanded="true" />
-            <element signature="e#10243#10244#0" expanded="true" />
-            <element signature="e#10307#10308#0" expanded="true" />
-            <element signature="e#10349#10350#0" expanded="true" />
-            <element signature="e#10527#10528#0" expanded="true" />
-            <element signature="e#10563#10564#0" expanded="true" />
-            <element signature="e#10610#10611#0" expanded="true" />
-            <element signature="e#10640#10641#0" expanded="true" />
-            <element signature="e#10686#10687#0" expanded="true" />
-            <element signature="e#10727#10728#0" expanded="true" />
-            <element signature="e#10790#10791#0" expanded="true" />
-            <element signature="e#10842#10843#0" expanded="true" />
-            <element signature="e#10914#10915#0" expanded="true" />
-            <element signature="e#10960#10961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/common/ReportMetadata.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/documentinterchange/logicalstructure/ReportMarkInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,19 +863,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,22 +877,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/StaxPDFReportTool/app/model/pdf/ReportFieldList.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportDocumentCatalogAdditionalActions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1130,9 +889,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1140,9 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1165,7 +918,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1173,7 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1181,11 +932,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#373#374#0" expanded="false" />
-            <element signature="e#408#409#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1194,9 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1204,9 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1214,30 +954,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/package-info.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/common/ReportPageLabels.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#363#364#0" expanded="false" />
-            <element signature="e#398#399#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,11 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#378#379#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1257,11 +976,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#332#333#0" expanded="false" />
-            <element signature="e#367#368#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1269,9 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1286,9 +997,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1296,9 +1004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1306,25 +1011,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Update.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Update.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/Interfaces/Update.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1332,7 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1340,7 +1033,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1348,9 +1040,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1358,9 +1047,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1368,9 +1054,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1378,11 +1061,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1390,7 +1068,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,7 +1075,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1406,7 +1082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-561">
           <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1414,9 +1089,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1424,103 +1096,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2771">
           <caret line="63" column="56" selection-start-line="63" selection-start-column="56" selection-end-line="64" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3527#3528#0" expanded="true" />
-            <element signature="e#3562#3563#0" expanded="true" />
-            <element signature="e#4950#4951#0" expanded="true" />
-            <element signature="e#4981#4982#0" expanded="true" />
-            <element signature="e#5019#5020#0" expanded="true" />
-            <element signature="e#5056#5057#0" expanded="true" />
-            <element signature="e#5104#5105#0" expanded="true" />
-            <element signature="e#5135#5136#0" expanded="true" />
-            <element signature="e#5187#5188#0" expanded="true" />
-            <element signature="e#5230#5231#0" expanded="true" />
-            <element signature="e#6424#6425#0" expanded="true" />
-            <element signature="e#6474#6475#0" expanded="true" />
-            <element signature="e#6542#6543#0" expanded="true" />
-            <element signature="e#6586#6587#0" expanded="true" />
-            <element signature="e#6775#6776#0" expanded="true" />
-            <element signature="e#6812#6813#0" expanded="true" />
-            <element signature="e#6860#6861#0" expanded="true" />
-            <element signature="e#6891#6892#0" expanded="true" />
-            <element signature="e#6939#6940#0" expanded="true" />
-            <element signature="e#6982#6983#0" expanded="true" />
-            <element signature="e#7027#7028#0" expanded="true" />
-            <element signature="e#7070#7071#0" expanded="true" />
-            <element signature="e#7124#7125#0" expanded="true" />
-            <element signature="e#7161#7162#0" expanded="true" />
-            <element signature="e#7225#7226#0" expanded="true" />
-            <element signature="e#7280#7281#0" expanded="true" />
-            <element signature="e#7325#7326#0" expanded="true" />
-            <element signature="e#7368#7369#0" expanded="true" />
-            <element signature="e#7422#7423#0" expanded="true" />
-            <element signature="e#7459#7460#0" expanded="true" />
-            <element signature="e#7523#7524#0" expanded="true" />
-            <element signature="e#7578#7579#0" expanded="true" />
-            <element signature="e#7651#7652#0" expanded="true" />
-            <element signature="e#7708#7709#0" expanded="true" />
-            <element signature="e#7790#7791#0" expanded="true" />
-            <element signature="e#7841#7842#0" expanded="true" />
-            <element signature="e#8564#8565#0" expanded="true" />
-            <element signature="e#8609#8610#0" expanded="true" />
-            <element signature="e#8667#8668#0" expanded="true" />
-            <element signature="e#8706#8707#0" expanded="true" />
-            <element signature="e#8776#8777#0" expanded="true" />
-            <element signature="e#8835#8836#0" expanded="true" />
-            <element signature="e#8882#8883#0" expanded="true" />
-            <element signature="e#8927#8928#0" expanded="true" />
-            <element signature="e#8985#8986#0" expanded="true" />
-            <element signature="e#9024#9025#0" expanded="true" />
-            <element signature="e#9092#9093#0" expanded="true" />
-            <element signature="e#9151#9152#0" expanded="true" />
-            <element signature="e#9194#9195#0" expanded="true" />
-            <element signature="e#9237#9238#0" expanded="true" />
-            <element signature="e#9291#9292#0" expanded="true" />
-            <element signature="e#9328#9329#0" expanded="true" />
-            <element signature="e#9390#9391#0" expanded="true" />
-            <element signature="e#9445#9446#0" expanded="true" />
-            <element signature="e#9490#9491#0" expanded="true" />
-            <element signature="e#9533#9534#0" expanded="true" />
-            <element signature="e#9587#9588#0" expanded="true" />
-            <element signature="e#9624#9625#0" expanded="true" />
-            <element signature="e#9688#9689#0" expanded="true" />
-            <element signature="e#9743#9744#0" expanded="true" />
-            <element signature="e#9806#9807#0" expanded="true" />
-            <element signature="e#9858#9859#0" expanded="true" />
-            <element signature="e#9930#9931#0" expanded="true" />
-            <element signature="e#9976#9977#0" expanded="true" />
-            <element signature="e#10195#10196#0" expanded="true" />
-            <element signature="e#10243#10244#0" expanded="true" />
-            <element signature="e#10307#10308#0" expanded="true" />
-            <element signature="e#10349#10350#0" expanded="true" />
-            <element signature="e#10527#10528#0" expanded="true" />
-            <element signature="e#10563#10564#0" expanded="true" />
-            <element signature="e#10610#10611#0" expanded="true" />
-            <element signature="e#10640#10641#0" expanded="true" />
-            <element signature="e#10686#10687#0" expanded="true" />
-            <element signature="e#10727#10728#0" expanded="true" />
-            <element signature="e#10790#10791#0" expanded="true" />
-            <element signature="e#10842#10843#0" expanded="true" />
-            <element signature="e#10914#10915#0" expanded="true" />
-            <element signature="e#10960#10961#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportAcroForm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="42" column="51" selection-start-line="42" selection-start-column="51" selection-end-line="42" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#ReportAcroForm#0;class#ReportAcroForm#0" expanded="false" />
-            <element signature="method#ReportAcroForm#1;class#ReportAcroForm#0" expanded="false" />
-            <element signature="method#onChanged#0;class#ReportAcroForm#0" expanded="false" />
-            <element signature="method#save#0;class#ReportAcroForm#0" expanded="false" />
-            <element signature="method#update#0;class#ReportAcroForm#0" expanded="false" />
-            <element signature="method#convertToReportFieldList#0;class#ReportAcroForm#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1528,7 +1103,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,32 +1110,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="39" column="98" selection-start-line="39" selection-start-column="98" selection-end-line="39" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/interactive/ReportAcroForm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="140" column="54" selection-start-line="140" selection-start-column="39" selection-end-line="140" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/MainWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#close#0;class#ReportDocument#0" expanded="false" />
-            <element signature="method#getImage#0;class#ReportDocument#0" expanded="false" />
-            <element signature="method#createPage#0;class#ReportDocument#0" expanded="false" />
-            <element signature="method#setFormFieldIDValues#0;class#ReportDocument#0" expanded="false" />
-            <element signature="method#setFormFieldMappingValues#0;class#ReportDocument#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="1564">
+          <caret line="106" column="12" selection-start-line="106" selection-start-column="12" selection-end-line="106" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/hermesviewer/app/view/controller/ReportToolMainWindow.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/view/controller/ViewTabController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
+        <state relative-caret-position="1173">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding>
-            <element signature="e#2187#2188#0" expanded="true" />
-            <element signature="e#2218#2219#0" expanded="true" />
             <element signature="method#setCellFactory#0;class#ViewTabController#0" expanded="false" />
             <element signature="method#updateViewFromModel#0;class#ViewTabController#0" expanded="false" />
             <element signature="method#load#0;class#ViewTabController#0" expanded="false" />
@@ -1571,6 +1153,38 @@
             <element signature="method#close#0;class#ViewTabController#0" expanded="false" />
             <element signature="method#getLogic#0;class#ViewTabController#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/logic/MasterViewLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hermes/report/pdmodel/ReportDocument.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="38" column="82" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/hermesviewer/app/ReportModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
